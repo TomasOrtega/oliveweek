@@ -54,10 +54,6 @@ npm run test:browser
 
 CI runs these checks using `uv.lock`. Dependabot checks Python packages and GitHub Actions for updates weekly.
 
-## Deploy
-
-The repository includes a GitHub Pages workflow. In **Settings → Pages**, choose **GitHub Actions** as the source. Pushes to `main` will then test and publish the site at <https://tomasortega.github.io/oliveweek/>.
-
 ## License
 
 OliveWeek code is MIT licensed. Vendored recipes and photographs retain their upstream public-domain dedication and provenance. See [`LICENSE`](LICENSE), [`NOTICE.md`](NOTICE.md) and [`vendor/based-cooking/LICENSE.txt`](vendor/based-cooking/LICENSE.txt).
