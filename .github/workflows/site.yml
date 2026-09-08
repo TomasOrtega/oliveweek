@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
       - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
@@ -45,14 +45,14 @@ jobs:
         run: git archive --format=zip --output=oliveweek-source.zip HEAD
       - name: Save source snapshot
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: oliveweek-source
           path: oliveweek-source.zip
           retention-days: 7
       - name: Save browser results and screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: browser-results
           path: |
@@ -60,7 +60,7 @@ jobs:
             unit-test-output.txt
           retention-days: 14
       - name: Save ready-to-publish website
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: oliveweek-site
           path: dist
@@ -68,7 +68,7 @@ jobs:
           retention-days: 7
       - name: Package Pages website
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
   deploy:
@@ -84,7 +84,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check Pages configuration
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Publish static website
         id: deployment
         uses: actions/deploy-pages@v4
