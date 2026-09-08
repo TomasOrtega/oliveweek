@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v9
         with:
           python-version: '3.12'
       - name: Download pinned public-domain recipes and photographs
-        run: python scripts/vendor_recipes.py
+        run: uv run --locked --no-dev python scripts/vendor_recipes.py
       - name: Commit vendored source and assets
         run: |
           git config user.name 'github-actions[bot]'

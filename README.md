@@ -39,14 +39,18 @@ Bundled nutrition values are generic estimates, not verified clinical data. Reci
 npm test
 ```
 
-This builds the production site and runs the calculation, storage and data-integrity tests. For the optional Chromium integration suite:
+This builds the production site and runs the calculation, storage and data-integrity tests. With [uv](https://docs.astral.sh/uv/), run Python checks and the Chromium integration suite:
 
 ```bash
-python3 -m pip install playwright==1.55.0
-python3 -m playwright install chromium
+uv sync --locked
+uv run ruff check .
+uv run ruff format --check .
+uv run playwright install chromium
 npm run build
 npm run test:browser
 ```
+
+CI runs these checks using `uv.lock`. Dependabot checks Python packages and GitHub Actions for updates weekly.
 
 ## Deploy
 
