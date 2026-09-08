@@ -26,7 +26,41 @@ test('water has no nutrition and is excluded from shopping',()=>{assert.ok(C.NUT
 test('calendar dates preserve local-independent consecutive days',()=>{assert.equal(C.addDays('2024-02-28',1),'2024-02-29');assert.equal(C.addDays('2026-12-31',1),'2027-01-01');assert.equal(C.validDate('2026-02-29'),false);assert.throws(()=>C.addDays('not-a-date',1));});
 test('preferences reject malformed and unsafe values',()=>{for(const bad of [{calories:NaN},{calories:-1},{days:8},{household:0},{days:2.5},{allergens:['other']},{excludedFoods:['__proto__']},{startDate:'2026-02-30'},{diet:'bogus'}])assert.throws(()=>C.normalizePreferences({...p,...bad}));});
 test('generated plan validates and is deterministic for a seed',()=>{const a=plan(),b=plan();assert.deepEqual(a,b);assert.ok(C.validatePlan(a,ctx));assert.equal(a.days.length,7);assert.equal(a.days[0].meals.length,4);});
-test('batch planning repeats breakfast and lunch without changing portion sizes',()=>{const a=plan();for(const slot of ['breakfast','lunch']){assert.equal(new Set(a.days.map(d=>d.meals.find(m=>m.slot===slot).recipeId)).size,1);assert.equal(new Set(a.days.map(d=>d.meals.find(m=>m.slot===slot).servings)).size,1);}});
+test('two prep sessions vary every meal type and keep portions consistent within each batch',()=>{
+  for(const seed of [1,42,983]){
+    const a=C.generatePlan(p,ctx,{seed});
+    for(const slot of C.SLOTS){
+      const meals=a.days.map(d=>d.meals.find(m=>m.slot===slot));
+      assert.notEqual(meals[0].recipeId,meals[3].recipeId,slot);
+      for(const session of [meals.slice(0,3),meals.slice(3)]){
+        assert.equal(new Set(session.map(m=>m.recipeId)).size,1);
+        assert.equal(new Set(session.map(m=>m.servings)).size,1);
+      }
+    }
+    assert.deepEqual([...new Set(C.prepSchedule(a,ctx,p).map(j=>j.sessionDay))],[0,3]);
+  }
+});
+test('two prep sessions allow repeats when restrictions leave one choice',()=>{
+  const recipes=C.SLOTS.map(slot=>({...C.allowedRecipes(p,ctx,slot)[0],id:`only-${slot}`,slots:[slot]}));
+  const limited=C.createContext({...catalogue,recipes});
+  const pref={...p};
+  const a=C.generatePlan(pref,limited,{seed:42});
+  assert.ok(C.validatePlan(a,limited));
+  for(const d of a.days)for(const m of d.meals)assert.ok(C.eligible(limited.recipes.get(m.recipeId),pref,limited,m.slot));
+  assert.equal(new Set(a.days.map(d=>d.meals[0].recipeId)).size,1);
+});
+test('short batch plans use only their available prep sessions',()=>{
+  for(const days of [1,3,4]){
+    const pref={...p,days,meals:3},a=C.generatePlan(pref,ctx,{seed:42});
+    assert.equal(a.days.length,days);
+    assert.ok(a.days.every(d=>d.meals.length===3));
+    assert.deepEqual([...new Set(C.prepSchedule(a,ctx,pref).map(j=>j.sessionDay))],days>3?[0,3]:[0]);
+  }
+});
+test('freezer mode keeps breakfast and lunch in a single batch',()=>{
+  const a=C.generatePlan({...p,mode:'freezer'},ctx,{seed:42});
+  for(const slot of ['breakfast','lunch'])assert.equal(new Set(a.days.map(d=>d.meals.find(m=>m.slot===slot).recipeId)).size,1);
+});
 for(const diet of C.DIETS)test(`generator respects ${diet} and ingredient filters`,()=>{
   const pref={...p,diet,excludedFoods:['feta']};const a=C.generatePlan(pref,ctx,{seed:5});
   for(const d of a.days)for(const m of d.meals)assert.ok(C.eligible(ctx.recipes.get(m.recipeId),pref,ctx,m.slot));

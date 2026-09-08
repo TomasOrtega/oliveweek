@@ -82,6 +82,14 @@ def run():
                 page.goto(BASE, wait_until="networkidle")
                 expect(page.locator(".meal")).to_have_count(4)
                 check("initial plan renders under /oliveweek/")
+                days = state(page)["plan"]["days"]
+                check(
+                    "two prep sessions offer different meals for every slot",
+                    all(
+                        first["recipeId"] != second["recipeId"]
+                        for first, second in zip(days[0]["meals"], days[3]["meals"])
+                    ),
+                )
                 page.wait_for_function(
                     "[...document.querySelectorAll('.meal img')].every(i=>i.complete&&i.naturalWidth>0)"
                 )
@@ -109,6 +117,10 @@ def run():
                     state(page)["plan"]["days"][0]["meals"][0]["servings"] == 1.25,
                 )
 
+                previous_lunches = [
+                    next(m for m in day["meals"] if m["slot"] == "lunch")
+                    for day in state(page)["plan"]["days"]
+                ]
                 page.locator(".meal").nth(1).locator('[data-action="swap"]').click()
                 page.locator('[data-action="choose-swap"]').first.click()
                 lunches = [
@@ -117,7 +129,13 @@ def run():
                 ]
                 check(
                     "swap replaces repeated lunches together",
-                    len({m["recipeId"] for m in lunches}) == 1,
+                    lunches[0]["recipeId"] != previous_lunches[0]["recipeId"]
+                    and all(
+                        after["recipeId"] == lunches[0]["recipeId"]
+                        if before["recipeId"] == previous_lunches[0]["recipeId"]
+                        else after == before
+                        for before, after in zip(previous_lunches, lunches)
+                    ),
                 )
                 old = state(page)
                 page.reload(wait_until="networkidle")

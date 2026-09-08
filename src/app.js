@@ -69,6 +69,7 @@ function renderShopping(){
 function renderPrep(){
   let html=heading('Meal prep',modes[state.preferences.mode],button('Print','print'));
   if(!state.plan)return html+emptyPlan();
+  if(state.preferences.mode==='batch')html+='<p>Prep on days 1 and 4, with a different breakfast, lunch, dinner and optional snack for each session when your filters allow. Portions repeat within each batch; locked meals stay as chosen.</p>';
   html+='<p class="warning">Refrigerate cooked food within 2 hours, in shallow containers at 4°C / 40°F or below. Use refrigerated portions within 3 days. Freeze later portions on prep day and thaw in the refrigerator. Reheat cooked leftovers to 74°C / 165°F. Keep salad, yogurt and other cold toppings separate.</p>';
   const jobs=C.prepSchedule(state.plan,ctx,state.preferences);
   for(const session of [...new Set(jobs.map(j=>j.sessionDay))]){

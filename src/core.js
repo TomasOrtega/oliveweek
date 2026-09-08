@@ -172,21 +172,26 @@ export function generatePlan(raw,ctx,{seed=Date.now(),existing=null,pantry={}}={
       if(!eligible(ctx.recipes.get(old.recipeId),p,ctx,slot))throw new Error(`Locked ${slot} on ${date} conflicts with your new restrictions. Unlock or replace it first.`);
       template.push({slot,days:[d],recipeId:old.recipeId,servings:old.servings,locked:true});continue;
     }
-    const key=p.mode==='variety'?`${d}-${slot}`:`${slot}-${slot==='dinner'&&d>=3?'b':'a'}`;
+    const key=p.mode==='variety'?`${d}-${slot}`:`${slot}-${(p.mode==='batch'||slot==='dinner')&&d>=3?'b':'a'}`;
     if(!groupMap.has(key)){const g={slot,days:[],locked:false};groupMap.set(key,g);template.push(g);}groupMap.get(key).days.push(d);
   }
   let winner=null,winnerScore=Infinity;
   const attempts=p.mode==='variety'?22:48;
   for(let attempt=0;attempt<attempts;attempt++){
-    const used=new Map(),groups=template.map(g=>{
+    const used=new Map(),usedBySlot=new Map(slots.map(slot=>[slot,new Set()])),groups=template.map(g=>{
       if(g.locked)return {...g};
-      const pool=pools[g.slot];
+      let pool=pools[g.slot];
+      if(p.mode==='batch'){
+        const alternatives=pool.filter(r=>!usedBySlot.get(g.slot).has(r.id));
+        if(alternatives.length)pool=alternatives;
+      }
       const ranked=pool.map(r=>{
         let w=1+(p.favorites.includes(r.id)?2:0)+(p.usePantry?pantryCoverage(r,pantry,ctx):0);
         if(used.has(r.id))w*=.15;
         return {r,rank:-Math.log(Math.max(1e-9,rand()))/w};
       }).sort((a,b)=>a.rank-b.rank);
       const r=ranked[0].r;used.set(r.id,(used.get(r.id)||0)+1);
+      usedBySlot.get(g.slot).add(r.id);
       return {...g,recipeId:r.id,servings:clamp(round(p.calories*fraction(g.slot,p.meals)/ctx.nutrition.get(r.id).kcal*20)/20,.5,2.5)};
     });
     let score=tune(groups,p,ctx,4);

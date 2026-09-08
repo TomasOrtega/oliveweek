@@ -18,6 +18,7 @@ Open <http://localhost:4173>. `npm start` builds the static site into `dist/` be
 
 - Generates 1–7 day meal plans around calorie, protein, diet and ingredient preferences.
 - Supports meal locking, swapping, household scaling and batch cooking.
+- Two prep sessions use different meals for days 1–3 and 4–7 when dietary filters allow, with consistent portions within each batch.
 - Combines ingredients into a pantry-aware grocery list with CSV and print exports.
 - Saves plans and custom recipes locally and supports JSON backup and restore.
 - Includes a source recipe browser alongside the nutrition-mapped planning collection.
