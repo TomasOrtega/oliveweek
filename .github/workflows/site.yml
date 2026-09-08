@@ -45,14 +45,14 @@ jobs:
         run: git archive --format=zip --output=oliveweek-source.zip HEAD
       - name: Save source snapshot
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: oliveweek-source
           path: oliveweek-source.zip
           retention-days: 7
       - name: Save browser results and screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: browser-results
           path: |
@@ -60,7 +60,7 @@ jobs:
             unit-test-output.txt
           retention-days: 14
       - name: Save ready-to-publish website
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: oliveweek-site
           path: dist
