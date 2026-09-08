@@ -61,6 +61,57 @@ test('freezer mode keeps breakfast and lunch in a single batch',()=>{
   const a=C.generatePlan({...p,mode:'freezer'},ctx,{seed:42});
   for(const slot of ['breakfast','lunch'])assert.equal(new Set(a.days.map(d=>d.meals.find(m=>m.slot===slot).recipeId)).size,1);
 });
+for(const mode of C.MODES)test(`two snacks work in ${mode} mode`,()=>{
+  const pref={...p,meals:5,mode},a=C.generatePlan(pref,ctx,{seed:42});
+  assert.ok(C.validatePlan(a,ctx));
+  assert.deepEqual(a,C.generatePlan(pref,ctx,{seed:42}));
+  for(const d of a.days){
+    assert.deepEqual(d.meals.map(m=>m.slot),['breakfast','lunch','dinner','snack','snack2']);
+    for(const m of d.meals.slice(3))assert.ok(ctx.recipes.get(m.recipeId).slots.includes('snack'));
+    for(const value of Object.values(C.dayTotals(d,ctx)))assert.ok(Number.isFinite(value));
+  }
+  if(mode==='batch')for(const slot of ['snack','snack2']){
+    const meals=a.days.map(d=>d.meals.find(m=>m.slot===slot));
+    assert.notEqual(meals[0].recipeId,meals[3].recipeId);
+    for(const group of [meals.slice(0,3),meals.slice(3)])assert.ok(group.every(m=>m.recipeId===group[0].recipeId&&m.servings===group[0].servings));
+  }
+});
+test('second snacks obey dietary filters and retain their own locks',()=>{
+  const pref={...p,meals:5,diet:'vegan',allergens:['sesame']},a=C.generatePlan(pref,ctx,{seed:42});
+  for(const d of a.days)for(const m of d.meals)assert.ok(C.eligible(ctx.recipes.get(m.recipeId),pref,ctx,m.slot));
+  const snack=a.days[2].meals.find(m=>m.slot==='snack2');snack.locked=true;snack.servings=1.35;
+  const b=C.generatePlan(pref,ctx,{existing:a,seed:123});
+  assert.deepEqual(b.days[2].meals.find(m=>m.slot==='snack2'),snack);
+  assert.throws(()=>C.generatePlan({...pref,avoidedRecipes:[snack.recipeId]},ctx,{existing:a}),/Locked/);
+});
+test('five-meal plans reconcile groceries, prep quantities and backups',()=>{
+  const pref={...p,meals:5,household:2},a=C.generatePlan(pref,ctx,{seed:42});
+  const expected=new Map();
+  for(const d of a.days)for(const m of d.meals)for(const i of ctx.recipes.get(m.recipeId).ingredients){
+    if(ctx.foods.get(i.foodId).aisle!=='Water')expected.set(i.foodId,(expected.get(i.foodId)||0)+i.grams*m.servings*pref.household);
+  }
+  for(const i of C.groceryList(a,ctx,pref.household))near(i.needed,expected.get(i.id));
+  near(C.prepSchedule(a,ctx,pref).reduce((s,j)=>s+j.servings,0),a.days.reduce((s,d)=>s+d.meals.reduce((s,m)=>s+m.servings*pref.household,0),0));
+  const s=blankState();s.preferences=pref;s.plan=a;
+  s.savedPlans=[{id:'two-snacks',name:'Two snacks',preferences:C.clone(pref),plan:C.clone(a)}];
+  assert.deepEqual(parseBackup(JSON.stringify(s),catalogue),s);
+});
+test('snack counts can change without losing the original snack lock',()=>{
+  const a=plan();a.days[0].meals[3].locked=true;
+  const b=C.generatePlan({...p,meals:5},ctx,{seed:42,existing:a});
+  assert.deepEqual(b.days[0].meals[3],a.days[0].meals[3]);
+  for(const meals of [4,3]){
+    const c=C.generatePlan({...p,meals},ctx,{existing:b,seed:42});
+    assert.ok(c.days.every(d=>d.meals.length===meals&&!d.meals.some(m=>m.slot==='snack2')));
+  }
+});
+test('plan validation rejects duplicate or orphaned second snacks and non-snack recipes',()=>{
+  const a=C.generatePlan({...p,meals:5},ctx,{seed:42});
+  const duplicate=C.clone(a);duplicate.days[0].meals[4].slot='snack';assert.throws(()=>C.validatePlan(duplicate,ctx));
+  const orphan=C.clone(a);orphan.days[0].meals.splice(3,1);assert.throws(()=>C.validatePlan(orphan,ctx));
+  const invalid=C.clone(a);invalid.days[0].meals[4].recipeId=catalogue.recipes.find(r=>!r.slots.includes('snack')).id;assert.throws(()=>C.validatePlan(invalid,ctx));
+  assert.throws(()=>C.normalizePreferences({...p,meals:6}));
+});
 for(const diet of C.DIETS)test(`generator respects ${diet} and ingredient filters`,()=>{
   const pref={...p,diet,excludedFoods:['feta']};const a=C.generatePlan(pref,ctx,{seed:5});
   for(const d of a.days)for(const m of d.meals)assert.ok(C.eligible(ctx.recipes.get(m.recipeId),pref,ctx,m.slot));

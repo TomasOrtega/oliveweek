@@ -90,11 +90,13 @@ def run():
                         for first, second in zip(days[0]["meals"], days[3]["meals"])
                     ),
                 )
-                page.wait_for_function(
-                    "[...document.querySelectorAll('.meal img')].every(i=>i.complete&&i.naturalWidth>0)"
-                )
-                check("all initial meal photographs load")
                 capture(page, "oliveweek-desktop.png")
+                check(
+                    "all initial meal photographs load",
+                    page.evaluate(
+                        "[...document.querySelectorAll('.meal img')].every(i=>i.complete&&i.naturalWidth>0)"
+                    ),
+                )
 
                 first = state(page)["plan"]["days"][0]["meals"][0]
                 page.locator(".meal").first.locator('[data-action="lock"]').click()
@@ -144,9 +146,7 @@ def run():
 
                 page.locator(".meal-picture").first.click()
                 expect(page.locator("#dialog")).to_be_visible()
-                page.wait_for_function(
-                    "document.querySelector('#dialog img').naturalWidth>0"
-                )
+                page.locator("#dialog img").evaluate("image => image.decode()")
                 check(
                     "recipe dialog has a photograph, weighed ingredients and source credit",
                     page.locator(".ingredients li").count() > 0
@@ -260,6 +260,9 @@ def run():
 
                 page.locator('.header [data-action="settings"]').click()
                 page.locator('#dialog select[name="diet"]').select_option("vegan")
+                page.locator('#dialog select[name="meals"]').select_option(
+                    label="Plus two snacks"
+                )
                 page.locator('#dialog input[name="protein"]').fill("80")
                 page.get_by_role("button", name="Apply & generate").click()
                 expect(page.locator("#dialog")).not_to_be_visible()
@@ -267,6 +270,78 @@ def run():
                     "preference changes generate a fresh plan",
                     state(page)["preferences"]["diet"] == "vegan",
                 )
+                expect(page.locator(".meal")).to_have_count(5)
+                expect(
+                    page.get_by_label("Snack 1 portions", exact=True)
+                ).to_be_visible()
+                expect(
+                    page.get_by_label("Snack 2 portions", exact=True)
+                ).to_be_visible()
+                check("two snacks can be selected in preferences")
+
+                first_snacks = [d["meals"][3] for d in state(page)["plan"]["days"]]
+                second_before = state(page)["plan"]["days"][0]["meals"][4]
+                page.locator('[data-action="swap"][data-slot="snack2"]').click()
+                expect(page.locator("#dialog-title")).to_have_text("Replace Snack 2")
+                page.locator('[data-action="choose-swap"]').first.click()
+                check(
+                    "swapping snack 2 leaves snack 1 unchanged",
+                    [d["meals"][3] for d in state(page)["plan"]["days"]] == first_snacks
+                    and state(page)["plan"]["days"][0]["meals"][4]["recipeId"]
+                    != second_before["recipeId"],
+                )
+                page.locator(".meal").nth(3).locator(".meal-picture").click()
+                page.get_by_role("button", name="Use in plan", exact=True).click()
+                page.locator('#dialog select[name="slot"]').select_option(
+                    label="Snack 2"
+                )
+                page.get_by_role("button", name="Replace meal", exact=True).click()
+                check(
+                    "a snack recipe can be placed in either snack slot",
+                    state(page)["plan"]["days"][0]["meals"][4]["recipeId"]
+                    == first_snacks[0]["recipeId"]
+                    and [d["meals"][3] for d in state(page)["plan"]["days"]]
+                    == first_snacks,
+                )
+                page.get_by_label("Snack 2 portions", exact=True).fill("1.35")
+                page.get_by_label("Snack 2 portions", exact=True).press("Tab")
+                page.get_by_role("button", name="Lock Snack 2", exact=True).click()
+                locked_snack = state(page)["plan"]["days"][0]["meals"][4]
+                page.get_by_role("button", name="Generate plan", exact=True).click()
+                expect(
+                    page.get_by_role("button", name="Generate plan", exact=True)
+                ).to_be_enabled()
+                check(
+                    "snack 2 retains its lock and portion after regeneration",
+                    locked_snack["servings"] == 1.35
+                    and state(page)["plan"]["days"][0]["meals"][4] == locked_snack,
+                )
+                page.get_by_role("button", name="Week view", exact=True).click()
+                expect(page.locator(".week-table tbody th")).to_have_text(
+                    [
+                        "Breakfast",
+                        "Lunch",
+                        "Dinner",
+                        "Snack 1",
+                        "Snack 2",
+                        "Daily total",
+                    ]
+                )
+                check("week view displays both snacks")
+                page.get_by_role("button", name="Day view", exact=True).click()
+                snack_state = state(page)
+                page.reload(wait_until="networkidle")
+                expect(page.locator(".meal")).to_have_count(5)
+                check("reload preserves the two-snack plan", state(page) == snack_state)
+
+                with page.expect_download() as dl:
+                    page.locator('footer [data-action="backup"]').click()
+                dl.value.save_as(OUT / "two-snacks.json")
+                page.locator("#backup-file").set_input_files(
+                    str(OUT / "two-snacks.json")
+                )
+                expect(page.locator("#toast")).to_contain_text("Backup imported")
+                check("two-snack backup round-trips", state(page) == snack_state)
 
                 page.locator('.header nav a[href="#prep"]').click()
                 expect(page.locator(".prep-job")).not_to_have_count(0)
@@ -301,16 +376,21 @@ def run():
                         )
                     if width == 390:
                         page.goto(BASE + "#plan", wait_until="networkidle")
-                        expect(page.locator(".meal")).to_have_count(4)
+                        expect(page.locator(".meal")).to_have_count(5)
                         capture(page, "oliveweek-mobile.png")
                 page.set_viewport_size({"width": 1440, "height": 1000})
                 page.goto(BASE + "#plan", wait_until="networkidle")
-                page.evaluate("navigator.serviceWorker.ready")
-                page.wait_for_function("!!navigator.serviceWorker.controller")
+                page.evaluate("""async () => {
+                    await navigator.serviceWorker.ready;
+                    if (!navigator.serviceWorker.controller) {
+                        await new Promise(resolve => navigator.serviceWorker.addEventListener(
+                            'controllerchange', resolve, {once: true}));
+                    }
+                }""")
                 await_state = state(page)
                 context.set_offline(True)
                 page.reload(wait_until="networkidle")
-                expect(page.locator(".meal")).to_have_count(4)
+                expect(page.locator(".meal")).to_have_count(5)
                 check(
                     "offline reload loads the app and saved plan",
                     state(page) == await_state,

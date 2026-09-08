@@ -2,6 +2,8 @@
 export const NUTRIENTS = ['kcal','protein','carbs','fat','fiber','sodium','saturatedFat'];
 export const ALLERGENS = ['milk','egg','fish','shellfish','tree-nuts','peanut','soy','sesame','gluten'];
 export const SLOTS = ['breakfast','lunch','dinner','snack'];
+export const PLAN_SLOTS = [...SLOTS,'snack2'];
+export const recipeSlot = slot => slot==='snack2'?'snack':slot;
 export const DIETS = ['mediterranean','vegetarian','vegan','pescatarian','anything'];
 export const MODES = ['batch','freezer','variety'];
 export const zero = () => Object.fromEntries(NUTRIENTS.map(k=>[k,0]));
@@ -32,7 +34,7 @@ export function validId(x) { return typeof x==='string' && /^[a-zA-Z0-9][a-zA-Z0
 export function normalizePreferences(raw={}) {
   if (!raw||typeof raw!=='object'||Array.isArray(raw)) throw new Error('Preferences must be an object.');
   const p={...defaultPreferences(),...raw};
-  for (const [k,a,b,int] of [['calories',800,7000,false],['protein',0,400,false],['carbs',0,1000,false],['fat',0,300,false],['days',1,7,true],['meals',3,4,true],['household',1,12,true],['maxTime',5,180,true]]) numberIn(p[k],k,a,b,int);
+  for (const [k,a,b,int] of [['calories',800,7000,false],['protein',0,400,false],['carbs',0,1000,false],['fat',0,300,false],['days',1,7,true],['meals',3,5,true],['household',1,12,true],['maxTime',5,180,true]]) numberIn(p[k],k,a,b,int);
   if (!DIETS.includes(p.diet)||!MODES.includes(p.mode)||!['metric','imperial'].includes(p.units)||!validDate(p.startDate)) throw new Error('Unsupported diet, schedule, unit, or start date.');
   for (const k of ['allergens','excludedFoods','avoidedRecipes','favorites']) {
     if (!Array.isArray(p[k])||p[k].length>500||!p[k].every(validId)) throw new Error(`Invalid ${k}.`);
@@ -94,7 +96,7 @@ export function dietAllows(r,diet,ctx) {
 }
 export function eligible(r,p,ctx,slot=null) {
   if(!r)return false;
-  if (slot&&!r.slots.includes(slot)) return false;
+  if (slot&&!r.slots.includes(recipeSlot(slot))) return false;
   if (r.minutes>p.maxTime||p.avoidedRecipes.includes(r.id)||!dietAllows(r,p.diet,ctx))return false;
   if (r.ingredients.some(i=>p.excludedFoods.includes(i.foodId)))return false;
   if (recipeAllergens(r,ctx).some(a=>p.allergens.includes(a)))return false;
@@ -116,20 +118,21 @@ export function validatePlan(plan,ctx) {
   const dates=new Set();
   for(const d of plan.days){
     if(!validDate(d.date)||dates.has(d.date))throw new Error('Invalid or duplicate plan date.');dates.add(d.date);
-    if(!Array.isArray(d.meals)||d.meals.length<3||d.meals.length>4)throw new Error('A day needs 3–4 meals.');
+    if(!Array.isArray(d.meals)||d.meals.length<3||d.meals.length>5)throw new Error('A day needs 3–5 meals.');
     const slots=new Set();
     for(const m of d.meals){
-      if(!SLOTS.includes(m.slot)||slots.has(m.slot)||!ctx.recipes.has(m.recipeId))throw new Error('Invalid meal entry.');slots.add(m.slot);
-      if(!ctx.recipes.get(m.recipeId).slots.includes(m.slot))throw new Error('Recipe does not match this meal type.');
+      if(!PLAN_SLOTS.includes(m.slot)||slots.has(m.slot)||!ctx.recipes.has(m.recipeId))throw new Error('Invalid meal entry.');slots.add(m.slot);
+      if(!ctx.recipes.get(m.recipeId).slots.includes(recipeSlot(m.slot)))throw new Error('Recipe does not match this meal type.');
       numberIn(m.servings,'Portions',.25,4);if(typeof m.locked!=='boolean')throw new Error('Invalid lock.');
     }
     if(!['breakfast','lunch','dinner'].every(s=>slots.has(s)))throw new Error('Missing main meal.');
+    if(slots.has('snack2')&&!slots.has('snack'))throw new Error('A second snack needs a first snack.');
   }
   for(let i=1;i<plan.days.length;i++)if(plan.days[i].date!==addDays(plan.days[0].date,i))throw new Error('Plan days must be consecutive.');
   return true;
 }
 export function seededRandom(seed) {let a=(Number(seed)>>>0)||1;return ()=>{a+=0x6D2B79F5;let t=a;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;};}
-const fraction=(slot,meals)=> (meals===4?{breakfast:.25,lunch:.30,dinner:.33,snack:.12}:{breakfast:.28,lunch:.35,dinner:.37})[slot];
+const fraction=(slot,meals)=> (meals===5?{breakfast:.23,lunch:.28,dinner:.29,snack:.10,snack2:.10}:meals===4?{breakfast:.25,lunch:.30,dinner:.33,snack:.12}:{breakfast:.28,lunch:.35,dinner:.37})[slot];
 function nutritionScore(t,p) {
   let s=24*((t.kcal-p.calories)/p.calories)**2;
   if(p.protein>0)s+=6*(Math.max(0,p.protein-t.protein)/p.protein)**2;
@@ -163,7 +166,7 @@ function pantryCoverage(r,pantry,ctx) {
 }
 /** Seeded multi-start coordinate search. Targets are soft, restrictions are hard. */
 export function generatePlan(raw,ctx,{seed=Date.now(),existing=null,pantry={}}={}) {
-  const p=normalizePreferences(raw), rand=seededRandom(seed),slots=SLOTS.slice(0,p.meals),pools={};
+  const p=normalizePreferences(raw), rand=seededRandom(seed),slots=PLAN_SLOTS.slice(0,p.meals),pools={};
   for(const s of slots){pools[s]=allowedRecipes(p,ctx,s);if(!pools[s].length)throw new Error(`No ${s} recipes satisfy these restrictions. Increase the cooking-time limit, add a compatible recipe, or review exclusions. No restriction was relaxed.`);}
   const template=[], groupMap=new Map();
   for(let d=0;d<p.days;d++)for(const slot of slots){
