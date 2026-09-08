@@ -1,0 +1,13 @@
+{
+  "repository": "LukeSmithxyz/based.cooking",
+  "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
+  "archiveSha256": "1cba3a61beef7d67503b13643a7befca74caee5c826c251342485f7050820046",
+  "licenseStatement": "This website and all its content is in the public domain.",
+  "licenseStatementSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
+  "excluded": {
+    "couscous": "Explicitly copied from 196flavors. Separate permission not verified.",
+    "yorkshire-puddings": "Originally published on BBC Good Food. Separate permission not verified.",
+    "tuscan-style-pork-roast": "Adaptation attributed to Binging With Babish. Omitted pending separate review."
+  },
+  "count": 142
+}

@@ -1,0 +1,85 @@
+name: Test and deploy OliveWeek
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: oliveweek-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    name: Build and browser tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test data, calculations, constraints and backups
+        run: |
+          set -o pipefail
+          npm test | tee unit-test-output.txt
+      - name: Install test-only browser tools
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Test real browser interactions, mobile layouts and offline use
+        run: python tests/browser_test.py
+      - name: Package source snapshot
+        if: always()
+        run: git archive --format=zip --output=oliveweek-source.zip HEAD
+      - name: Save source snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: oliveweek-source
+          path: oliveweek-source.zip
+          retention-days: 7
+      - name: Save browser results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-results
+          path: |
+            test-results
+            unit-test-output.txt
+          retention-days: 14
+      - name: Save ready-to-publish website
+        uses: actions/upload-artifact@v4
+        with:
+          name: oliveweek-site
+          path: dist
+          include-hidden-files: true
+          retention-days: 7
+      - name: Package Pages website
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    name: Publish to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check Pages configuration
+        uses: actions/configure-pages@v5
+      - name: Publish static website
+        id: deployment
+        uses: actions/deploy-pages@v4
