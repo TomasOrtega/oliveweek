@@ -1,0 +1,28 @@
+minimum_prek_version = "0.4.14"
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "ruff-check"
+name = "ruff check"
+entry = "uv run --locked ruff check ."
+language = "system"
+pass_filenames = false
+always_run = true
+
+[[repos.hooks]]
+id = "ruff-format"
+name = "ruff format check"
+entry = "uv run --locked ruff format --check ."
+language = "system"
+pass_filenames = false
+always_run = true
+
+[[repos.hooks]]
+id = "tests"
+name = "unit and data tests"
+entry = "npm test"
+language = "system"
+pass_filenames = false
+always_run = true

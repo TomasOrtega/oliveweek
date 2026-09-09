@@ -79,6 +79,53 @@ celery|Celery|plant|Produce|raw trimmed weight||14,0.7,3,0.2,1.6,80,0
 corn|Sweetcorn|plant|Frozen foods|frozen or drained weight||86,3.3,19,1.4,2.7,15,0.2
 cilantro|Cilantro|plant|Produce|raw edible weight||23,2.1,3.7,0.5,2.8,46,0
 lime|Lime juice|plant|Produce|juice weight, buy extra whole fruit||25,0.4,8.4,0.1,0.4,2,0
+pineapple|Pineapple, trimmed|plant|Fruit|raw edible weight||50,0.5,13.1,0.1,1.4,1,0
+ginger|Fresh ginger, peeled|plant|Produce|raw edible weight||80,1.8,17.8,0.8,2,13,0.2
+jalapeno|Jalapeño pepper, trimmed|plant|Produce|raw edible weight||29,0.9,6.5,0.4,2.8,3,0.1
+mint|Fresh mint leaves|plant|Produce|raw edible weight||44,3.3,8.4,0.7,6.8,31,0.2
+basil|Fresh basil|plant|Produce|raw edible weight||23,3.2,2.7,0.6,1.6,4,0
+cauliflower|Cauliflower, trimmed|plant|Produce|raw edible weight||25,1.9,5,0.3,2,30,0.1
+green-beans|Green beans, trimmed|plant|Produce|raw edible weight||31,1.8,7,0.1,2.7,6,0
+asparagus|Asparagus, trimmed|plant|Produce|raw edible weight||20,2.2,3.9,0.1,2.1,2,0
+beets|Beets, trimmed|plant|Produce|raw edible weight||43,1.6,10,0.2,2.8,78,0
+butternut-squash|Butternut squash, trimmed|plant|Produce|raw edible weight||45,1,11.7,0.1,2,4,0
+acorn-squash|Acorn squash, trimmed|plant|Produce|raw edible weight||40,0.8,10.4,0.1,1.5,3,0
+shallot|Shallots, peeled|plant|Produce|raw edible weight||72,2.5,16.8,0.1,3.2,12,0
+artichoke|Artichoke hearts|plant|Produce|trimmed raw edible weight||47,3.3,10.5,0.2,5.4,94,0
+soy-sauce|Soy sauce|plant|Oils & seasonings|as sold, brand varies|soy,gluten|53,8.1,4.9,0.6,0.8,5493,0.1
+miso|Miso paste|plant|Oils & seasonings|as sold, brand varies|soy|198,12.8,25.4,6,5.4,3728,1
+doubanjiang|Doubanjiang|plant|Oils & seasonings|as sold, brand varies|soy|83,5,10,2,3,4500,0.4
+sriracha|Sriracha sauce|plant|Oils & seasonings|as sold, brand varies||93,1.3,20,0.9,2.1,2120,0.1
+oyster-sauce|Oyster sauce|fish|Oils & seasonings|as sold, brand varies|shellfish,soy,gluten|51,1.4,10.9,0.3,0.3,2733,0.1
+rice-wine|Rice cooking wine or sake|plant|Oils & seasonings|as sold||134,0.5,5,0,0,5,0
+liquid-smoke|Liquid smoke|plant|Oils & seasonings|as sold, brand varies||0,0,0,0,0,5,0
+sugar|Granulated sugar|plant|Oils & seasonings|dry weight||387,0,100,0,0,1,0
+lite-salt|Lite salt|plant|Oils & seasonings|as sold, about half sodium chloride||0,0,0,0,0,19379,0
+canola-oil|Canola oil|plant|Oils & seasonings|as sold||884,0,0,100,0,0,7.4
+curry-powder|Japanese curry powder|plant|Oils & seasonings|dry weight, brand varies||325,14.3,55.8,14,53,52,2
+cocoa-powder|Unsweetened cocoa powder|plant|Oils & seasonings|dry weight||228,19.6,57.9,13.7,37,21,8.1
+peanuts|Unsalted peanuts|plant|Nuts & seeds|edible weight|peanut|567,25.8,16.1,49.2,8.5,18,6.3
+cashews|Cashews|plant|Nuts & seeds|raw edible weight|tree-nuts|553,18.2,30.2,43.9,3.3,12,7.8
+sesame-seeds|Sesame seeds|plant|Nuts & seeds|dry weight|sesame|573,17.7,23.4,49.7,11.8,11,7
+nutritional-yeast|Nutritional yeast|plant|Oils & seasonings|dry weight, brand varies||325,45,35,5,20,200,1
+cornmeal|Masa harina|plant|Grains & bread|dry weight||370,7,79,3.5,7.3,7,0.5
+rice-flour|Rice flour|plant|Grains & bread|dry weight||366,6,80.1,1.4,2.4,0,0.4
+corn-tortilla|Corn tortillas|plant|Grains & bread|as sold||218,5.7,44.6,2.9,6.3,45,0.4
+ramen-noodles|Ramen noodles|plant|Grains & bread|dry weight, check label for egg and sodium|gluten|350,10,72,2,3,1000,0.5
+black-beans-dry|Dry black beans|plant|Beans & canned goods|dry weight||341,21.6,62.4,1.4,15.5,5,0.4
+chickpeas-dry|Dry chickpeas|plant|Beans & canned goods|dry weight||364,19.3,60.7,6,17.4,24,0.6
+mung-beans|Dry mung beans|plant|Beans & canned goods|dry weight||347,23.9,62.6,1.2,16.3,15,0.3
+lima-beans-dry|Dry large lima beans|plant|Beans & canned goods|dry weight||338,21.5,63.4,0.7,19,18,0.2
+tempeh|Tempeh|plant|Plant proteins|as sold, brand varies|soy|192,20.3,7.6,10.8,0,9,2.2
+vital-wheat-gluten|Vital wheat gluten|plant|Plant proteins|dry weight|gluten|370,75,14,1.9,0.6,29,0.3
+soy-chorizo|Soy chorizo|plant|Plant proteins|as sold, brand varies|soy|250,14.3,8,14.3,3,1054,2.7
+plant-cheese|Plant-based mozzarella|plant|Plant proteins|as sold, brand varies|tree-nuts|254,3,25,21,1,791,3
+marinated-artichokes|Marinated artichoke hearts|plant|Beans & canned goods|drained weight, brand varies||160,8,8,8,4,800,1
+adobo-peppers|Chipotle peppers in adobo|plant|Beans & canned goods|as sold, brand varies||72,3,12,2,4,1000,0.3
+tomato-paste|Tomato paste|plant|Beans & canned goods|as sold||82,4.3,18.9,0.5,4.1,59,0.1
+sun-dried-tomatoes|Sun-dried tomatoes in oil|plant|Beans & canned goods|drained weight, brand varies||258,14.1,55.8,3,12.3,2095,0.4
+kelp|Dried kelp|plant|Oils & seasonings|dry weight||43,1.7,9.6,0.6,1.3,233,0.2
+bok-choy|Bok choy, trimmed|plant|Produce|raw edible weight||13,1.5,2.2,0.2,1,65,0
 `;
 const nutrients = ['kcal','protein','carbs','fat','fiber','sodium','saturatedFat'];
 export const foods = rows.trim().split('\n').map(row => {
