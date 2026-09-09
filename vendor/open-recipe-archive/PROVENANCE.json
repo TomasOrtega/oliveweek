@@ -1,20 +1,21 @@
 {
   "repository": "AdamBouhmad/open-recipe-archive",
   "revision": "ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8",
+  "archiveSha256": "02da777aa691335729ee3fa2f9ebf44ea4cdd8d2486c31ff3ff75b115d4d3639",
   "licenseStatement": "All recipes are sourced from public-domain materials",
   "licenseStatementSource": "https://github.com/AdamBouhmad/open-recipe-archive/blob/ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8/README.md#provenance-and-licensing",
-  "selectionStrategy": "Ten deterministic SHA-256-ranked, non-duplicate, pre-1931 public-domain recipes from each selected collection.",
+  "selectionStrategy": "Six hundred deterministic SHA-256-ranked, non-duplicate, pre-1931 public-domain recipes across ten selected regional collections.",
   "selectedCollections": {
-    "cozinha-brasileira": 10,
-    "cocina-mexicana": 10,
-    "chinese-kitchen": 10,
-    "filipino-kitchen": 10,
-    "indian-kitchen": 10,
-    "japanese-kitchen": 10,
-    "jewish-kitchen": 10,
-    "louisiana-creole": 10,
-    "ottoman-turkish": 10,
-    "west-indies": 10
+    "cozinha-brasileira": 62,
+    "cocina-mexicana": 62,
+    "chinese-kitchen": 62,
+    "filipino-kitchen": 62,
+    "indian-kitchen": 62,
+    "japanese-kitchen": 62,
+    "jewish-kitchen": 61,
+    "louisiana-creole": 61,
+    "ottoman-turkish": 61,
+    "west-indies": 45
   },
   "jsonlSha256": {
     "cozinha-brasileira": "9e6fa01419bf33896e5d58ae9d3567c35ba2d73465417d895ea71861e87bcf9b",
@@ -28,5 +29,5 @@
     "ottoman-turkish": "6742c9883218358f5359609c606f16b3f102865bfd5d7e97579b932660fd4080",
     "west-indies": "f6bce022d48cf3ceca8616152665b4e8c099b0643af09cc2caa54811af100a4a"
   },
-  "count": 100
+  "count": 600
 }

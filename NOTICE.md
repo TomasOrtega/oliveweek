@@ -38,7 +38,7 @@ Provenance and licensing statement: https://github.com/AdamBouhmad/open-recipe-a
 
 Open Recipe Archive identifies its historical corpus records as public domain and records the original book title, year and source URL for each recipe. OliveWeek includes only records explicitly marked `public-domain` with source years no later than 1930. Its repository uses the Unlicense; a copy is retained in `vendor/open-recipe-archive/LICENSE.txt`.
 
-OliveWeek selects ten non-duplicate recipes from each of ten regional collections using a deterministic SHA-256 ordering. The 100 original Markdown files are retained in `vendor/open-recipe-archive`; their parsed records are in `data/open-recipe-archive.json`. The source JSONL checksums, selection method, collection counts and pinned revision are recorded in `vendor/open-recipe-archive/PROVENANCE.json`. These recipes are labeled as historical because their language, measurements, ingredients and food-safety assumptions may be outdated.
+OliveWeek selects 600 non-duplicate recipes across ten regional collections using a deterministic SHA-256 ordering. The original Markdown files are retained in `vendor/open-recipe-archive`; their parsed records are in `data/open-recipe-archive.json`. The source archive and JSONL checksums, selection method, collection counts and pinned revision are recorded in `vendor/open-recipe-archive/PROVENANCE.json`. These recipes are labeled as historical because their language, measurements, ingredients and food-safety assumptions may be outdated.
 
 ## Excluded entries
 

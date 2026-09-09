@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
 """Vendor a reproducible, diverse sample of historical public-domain recipes."""
 
-import concurrent.futures
 import hashlib
+import io
 import json
 import pathlib
 import re
 import urllib.request
+import zipfile
 
 from vendor_recipes import items, section
 
 REVISION = "ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8"
 REPOSITORY = "AdamBouhmad/open-recipe-archive"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-COLLECTIONS = (
-    "cozinha-brasileira",
-    "cocina-mexicana",
-    "chinese-kitchen",
-    "filipino-kitchen",
-    "indian-kitchen",
-    "japanese-kitchen",
-    "jewish-kitchen",
-    "louisiana-creole",
-    "ottoman-turkish",
-    "west-indies",
-)
-PER_COLLECTION = 10
+COLLECTION_TARGETS = {
+    "cozinha-brasileira": 62,
+    "cocina-mexicana": 62,
+    "chinese-kitchen": 62,
+    "filipino-kitchen": 62,
+    "indian-kitchen": 62,
+    "japanese-kitchen": 62,
+    "jewish-kitchen": 61,
+    "louisiana-creole": 61,
+    "ottoman-turkish": 61,
+    "west-indies": 45,
+}
 
 
 def download(url, limit):
@@ -51,14 +51,18 @@ def remove_previous(records):
 
 
 def main():
-    raw_root = f"https://raw.githubusercontent.com/{REPOSITORY}/{REVISION}"
-    readme = download(f"{raw_root}/README.md", 100_000).decode()
+    archive_bytes = download(
+        f"https://codeload.github.com/{REPOSITORY}/zip/{REVISION}", 250_000_000
+    )
+    archive = zipfile.ZipFile(io.BytesIO(archive_bytes))
+    prefix = archive.namelist()[0].split("/")[0] + "/"
+    readme = archive.read(prefix + "README.md").decode()
     statement = "All recipes are sourced from public-domain materials"
     if statement not in readme:
         raise ValueError(
             "The pinned source no longer has the expected provenance statement"
         )
-    license_bytes = download(f"{raw_root}/LICENSE.md", 100_000)
+    license_bytes = archive.read(prefix + "LICENSE.md")
 
     output_path = ROOT / "data/open-recipe-archive.json"
     previous = json.loads(output_path.read_text()) if output_path.exists() else []
@@ -75,9 +79,8 @@ def main():
     data_files = {}
     collection_counts = {}
 
-    for collection in COLLECTIONS:
-        url = f"{raw_root}/collections/{collection}/recipes.jsonl"
-        source_bytes = download(url, 30_000_000)
+    for collection, target in COLLECTION_TARGETS.items():
+        source_bytes = archive.read(f"{prefix}collections/{collection}/recipes.jsonl")
         data_files[collection] = hashlib.sha256(source_bytes).hexdigest()
         candidates = []
         for line in source_bytes.decode().splitlines():
@@ -117,24 +120,23 @@ def main():
             used_slugs.add(source["slug"])
             selected.append((source, ingredients, steps))
             count += 1
-            if count == PER_COLLECTION:
+            if count == target:
                 break
-        if count != PER_COLLECTION:
+        if count != target:
             raise ValueError(f"Only {count} eligible recipes in {collection}")
         collection_counts[collection] = count
 
-    def fetch_markdown(selection):
+    downloaded = []
+    for selection in selected:
         source, ingredients, steps = selection
         collection = source["collection"]
         slug = source["slug"]
-        url = f"{raw_root}/collections/{collection}/recipes/{slug}.md"
-        markdown = download(url, 500_000)
+        markdown = archive.read(f"{prefix}collections/{collection}/recipes/{slug}.md")
+        if len(markdown) > 500_000:
+            raise ValueError(f"Markdown exceeds import limit: {collection}/{slug}")
         if source["body"].encode() not in markdown:
             raise ValueError(f"JSONL body does not match Markdown: {collection}/{slug}")
-        return selection, markdown
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
-        downloaded = list(executor.map(fetch_markdown, selected))
+        downloaded.append((selection, markdown))
 
     records = []
     for (source, ingredients, steps), markdown in downloaded:
@@ -168,8 +170,9 @@ def main():
             }
         )
     records.sort(key=lambda record: record["name"].casefold())
-    if len(records) != len(COLLECTIONS) * PER_COLLECTION:
-        raise ValueError(f"Expected 100 recipes, found {len(records)}")
+    expected = sum(COLLECTION_TARGETS.values())
+    if len(records) != expected:
+        raise ValueError(f"Expected {expected} recipes, found {len(records)}")
 
     output_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n")
     (vendor / "LICENSE.txt").write_bytes(license_bytes)
@@ -178,9 +181,10 @@ def main():
             {
                 "repository": REPOSITORY,
                 "revision": REVISION,
+                "archiveSha256": hashlib.sha256(archive_bytes).hexdigest(),
                 "licenseStatement": statement,
                 "licenseStatementSource": f"https://github.com/{REPOSITORY}/blob/{REVISION}/README.md#provenance-and-licensing",
-                "selectionStrategy": "Ten deterministic SHA-256-ranked, non-duplicate, pre-1931 public-domain recipes from each selected collection.",
+                "selectionStrategy": "Six hundred deterministic SHA-256-ranked, non-duplicate, pre-1931 public-domain recipes across ten selected regional collections.",
                 "selectedCollections": collection_counts,
                 "jsonlSha256": data_files,
                 "count": len(records),
