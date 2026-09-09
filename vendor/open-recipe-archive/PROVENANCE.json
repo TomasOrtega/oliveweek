@@ -1,0 +1,32 @@
+{
+  "repository": "AdamBouhmad/open-recipe-archive",
+  "revision": "ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8",
+  "licenseStatement": "All recipes are sourced from public-domain materials",
+  "licenseStatementSource": "https://github.com/AdamBouhmad/open-recipe-archive/blob/ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8/README.md#provenance-and-licensing",
+  "selectionStrategy": "Ten deterministic SHA-256-ranked, non-duplicate, pre-1931 public-domain recipes from each selected collection.",
+  "selectedCollections": {
+    "cozinha-brasileira": 10,
+    "cocina-mexicana": 10,
+    "chinese-kitchen": 10,
+    "filipino-kitchen": 10,
+    "indian-kitchen": 10,
+    "japanese-kitchen": 10,
+    "jewish-kitchen": 10,
+    "louisiana-creole": 10,
+    "ottoman-turkish": 10,
+    "west-indies": 10
+  },
+  "jsonlSha256": {
+    "cozinha-brasileira": "9e6fa01419bf33896e5d58ae9d3567c35ba2d73465417d895ea71861e87bcf9b",
+    "cocina-mexicana": "cefc8ad15595fd461385df98e12d534260beb5687a1bcffb512c9e6e780558c1",
+    "chinese-kitchen": "b6e76619c130570923098d128e3b8c6a5494db8ee71b108dd86f25f05fde8ed0",
+    "filipino-kitchen": "f9f223c04560cab4dab2cdd83022725eebda963f5f6a8aa5bd42a4ed3f2a5ed8",
+    "indian-kitchen": "95b22eda0bfa063a3631b138688765c3735d2b127179edf6ca925a4fff0f2d69",
+    "japanese-kitchen": "6b06afc08771aff11d5dc80bb5b5816dcefdb0a6895c06c7638628b863e20dae",
+    "jewish-kitchen": "483abbd08bc68b842a1b38f26dad7c45d02d3b2a69d7ea0691ec03c4f02ed8d9",
+    "louisiana-creole": "31da0d005c9edbd00b426633b87ace4e32124f8a396a7c48e2797b84896f0314",
+    "ottoman-turkish": "6742c9883218358f5359609c606f16b3f102865bfd5d7e97579b932660fd4080",
+    "west-indies": "f6bce022d48cf3ceca8616152665b4e8c099b0643af09cc2caa54811af100a4a"
+  },
+  "count": 100
+}

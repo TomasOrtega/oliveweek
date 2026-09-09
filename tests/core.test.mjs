@@ -11,7 +11,7 @@ const plan=()=>C.generatePlan(p,ctx,{seed:42});
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 
 test('catalogue has attributed photos and honest nutrition status',()=>{
-  assert.equal(catalogue.recipes.length,46);assert.ok(community.length>=300);
+  assert.equal(catalogue.recipes.length,46);assert.ok(community.length>=514);
   assert.equal(catalogue.nutritionStatus,'generic-starter-estimates-not-verified');
   for(const f of catalogue.foods)assert.equal(f.source.type,'starter-estimate');
   for(const r of catalogue.recipes){
@@ -29,8 +29,14 @@ test('all recipes in the spreadsheet index are present',()=>{
   assert.deepEqual(catalogue.recipes.filter(r=>r.sourceCollection).map(r=>r.photoId).sort(),expected);
 });
 test('source recipes retain collection provenance',()=>{
-  assert.deepEqual(new Set(community.map(r=>r.collection)),new Set(['Based Cooking','Public Domain Recipes']));
+  assert.deepEqual(new Set(community.map(r=>r.collection)),new Set(['Based Cooking','Open Recipe Archive','Public Domain Recipes']));
   for(const r of community){assert.ok(r.source.includes(r.revision));assert.ok(r.licenseSource.includes(r.revision));assert.ok(r.originalMarkdown);}
+  const historical=community.filter(r=>r.collection==='Open Recipe Archive');
+  assert.equal(historical.length,100);
+  for(const r of historical){assert.equal(r.historical,true);assert.ok(r.sourceTitle);assert.match(r.sourceYear,/^\d{4}$/);assert.match(r.sourcePage,/^https:\/\//);}
+});
+test('historical recipe snapshots match their recorded checksums',async()=>{
+  for(const r of community.filter(r=>r.historical)){const bytes=await readFile(new URL('../'+r.originalMarkdown,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),r.markdownSha256);}
 });
 test('externally credited recipes are not published',()=>{for(const slug of ['beef-tips','couscous','gumbo-shrimp-and-sausage','shrimp-and-grits','tuscan-style-pork-roast','yorkshire-puddings'])assert.ok(!community.some(r=>r.slug===slug));});
 test('recipe IDs and source IDs are unique',()=>{assert.equal(new Set(catalogue.recipes.map(r=>r.id)).size,catalogue.recipes.length);assert.equal(new Set(community.map(r=>r.id)).size,community.length);});

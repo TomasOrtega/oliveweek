@@ -28,6 +28,18 @@ Public Domain Recipes is a continuation of Based Cooking. Its README dedicates s
 
 OliveWeek imports only recipes not already present in the pinned Based Cooking collection. Original Markdown is stored in `vendor/public-domain-recipes`; `data/public-domain-recipes.json` retains collection, author, source, license and revision metadata. The one new contributor photograph is stored locally with its source URL and SHA-256 checksum. The pinned archive hash, duplicate count, format skips and exclusions are recorded in `vendor/public-domain-recipes/PROVENANCE.json`.
 
+## Open Recipe Archive historical collection
+
+Source repository: https://github.com/AdamBouhmad/open-recipe-archive
+
+Pinned revision: `ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8`.
+
+Provenance and licensing statement: https://github.com/AdamBouhmad/open-recipe-archive/blob/ae3bd2c009a8899dfe63b9166fa98ae3fa8041a8/README.md#provenance-and-licensing
+
+Open Recipe Archive identifies its historical corpus records as public domain and records the original book title, year and source URL for each recipe. OliveWeek includes only records explicitly marked `public-domain` with source years no later than 1930. Its repository uses the Unlicense; a copy is retained in `vendor/open-recipe-archive/LICENSE.txt`.
+
+OliveWeek selects ten non-duplicate recipes from each of ten regional collections using a deterministic SHA-256 ordering. The 100 original Markdown files are retained in `vendor/open-recipe-archive`; their parsed records are in `data/open-recipe-archive.json`. The source JSONL checksums, selection method, collection counts and pinned revision are recorded in `vendor/open-recipe-archive/PROVENANCE.json`. These recipes are labeled as historical because their language, measurements, ingredients and food-safety assumptions may be outdated.
+
 ## Excluded entries
 
 The following entries explicitly credit third-party publications, channels or adaptations and were removed from the active source collection and published website pending separate permission review:

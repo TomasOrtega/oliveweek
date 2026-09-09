@@ -10,11 +10,12 @@ import {createContext} from '../src/core.js';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const source=JSON.parse(await readFile(resolve(root,'data/community.json'),'utf8'));
 const publicDomainSource=JSON.parse(await readFile(resolve(root,'data/public-domain-recipes.json'),'utf8'));
+const historicalSource=JSON.parse(await readFile(resolve(root,'data/open-recipe-archive.json'),'utf8'));
 const spreadsheetPhotos=JSON.parse(await readFile(resolve(root,'data/spreadsheet-photo-sources.json'),'utf8'));
 // Explicit third-party attributions require separate permission, despite the
 // collection's blanket public-domain policy. Keep these out of every build.
 const excluded=new Set(['beef-tips','couscous','gumbo-shrimp-and-sausage','shrimp-and-grits','tuscan-style-pork-roast','yorkshire-puddings']);
-const community=[...source,...publicDomainSource].filter(r=>!excluded.has(r.slug));
+const community=[...source,...publicDomainSource,...historicalSource].filter(r=>!excluded.has(r.slug));
 const byId=new Map(community.map(r=>[r.id,r]));
 const communityRecipes=planningRecipes.map(r=>{
   const s=byId.get(r.sourceId);
@@ -54,6 +55,7 @@ await writeFile(resolve(dist,'data/community.json'),JSON.stringify(community));
 for(const photo of new Set([...community,...importedRecipes].map(r=>r.photo).filter(Boolean))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
 await cp(resolve(root,'vendor/based-cooking/LICENSE.txt'),resolve(dist,'RECIPE-LICENSE.txt'));
 await cp(resolve(root,'vendor/public-domain-recipes/LICENSE.txt'),resolve(dist,'PUBLIC-DOMAIN-RECIPES-LICENSE.txt'));
+await cp(resolve(root,'vendor/open-recipe-archive/LICENSE.txt'),resolve(dist,'OPEN-RECIPE-ARCHIVE-LICENSE.txt'));
 await writeFile(resolve(dist,'.nojekyll'),'');
 const hash=createHash('sha256');
 for(const path of ['index.html','styles.css','src/app.js','src/core.js','src/storage.js','data/catalogue.json','data/community.json'])hash.update(await readFile(resolve(dist,path)));

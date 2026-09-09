@@ -236,6 +236,15 @@ def run():
                 expect(page.get_by_role("link", name="Content license")).to_be_visible()
                 close_dialog(page)
 
+                page.locator("#recipe-search").fill("Aadi Pilaw")
+                expect(page.locator(".recipe-tile")).to_have_count(1)
+                page.locator(".tile-open").click()
+                expect(page.locator("#dialog")).to_contain_text("Historical recipe")
+                expect(
+                    page.get_by_role("link", name="Historical source")
+                ).to_be_visible()
+                close_dialog(page)
+
                 page.locator('.header nav a[href="#plan"]').click()
                 page.get_by_role("button", name="Save plan", exact=True).click()
                 page.locator('#dialog input[name="name"]').fill("Integration test week")
