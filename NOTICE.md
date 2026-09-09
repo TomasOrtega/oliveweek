@@ -53,8 +53,8 @@ The following entries explicitly credit third-party publications, channels or ad
 
 The blanket upstream licenses were not treated as independent permission to republish obviously attributed third-party content. Other contributor ownership has not been independently verified. Rights concerns should be reported with the affected file and supporting details. Maintainers should remove affected content while reviewing the concern.
 
-## OliveWeek-authored adaptations and code
+## OliveWeek-authored recipes, adaptations and code
 
-The UI, planner, storage layer, tests, build scripts, original mark and explicit weighed recipe adaptations are distributed under the MIT license in `LICENSE`. The upstream public-domain content is not made proprietary by that license.
+The UI, planner, storage layer, tests, build scripts, original mark, open planning recipe pack and explicit weighed recipe adaptations are distributed under the MIT license in `LICENSE`. The upstream public-domain content is not made proprietary by that license.
 
 No remote image service, stock-photo subscription or API credential is used. Generic ingredient nutrition estimates are separately described in `docs/NUTRITION.md` and are not attributed to a verified USDA import.

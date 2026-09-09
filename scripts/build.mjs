@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {foods} from '../data/foods.js';
 import {planningRecipes} from '../data/planning-recipes.js';
+import {openPlanningRecipes} from '../data/open-planning-recipes.js';
 import {spreadsheetRecipes} from '../data/spreadsheet-recipes.js';
 import {createContext} from '../src/core.js';
 
@@ -28,7 +29,7 @@ const importedRecipes=spreadsheetRecipes.map(r=>{
   if(!photo)throw new Error(`Recipe ${r.id} has no attributed spreadsheet photo: ${r.photoId}`);
   return {...r,...photo,sourceName:r.name};
 });
-const recipes=[...communityRecipes,...importedRecipes];
+const recipes=[...communityRecipes,...importedRecipes,...openPlanningRecipes];
 const catalogue={version:2,nutritionStatus:'generic-starter-estimates-not-verified',foods,recipes};
 createContext(catalogue);
 for(const r of community){

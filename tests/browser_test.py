@@ -92,9 +92,14 @@ def run():
                 )
                 capture(page, "oliveweek-desktop.png")
                 check(
-                    "all initial meal photographs load",
+                    "all initial meals show a loaded photograph or fallback",
                     page.evaluate(
-                        "[...document.querySelectorAll('.meal img')].every(i=>i.complete&&i.naturalWidth>0)"
+                        """[...document.querySelectorAll('.meal')].every(meal => {
+                            const image = meal.querySelector('img');
+                            return image
+                                ? image.complete && image.naturalWidth > 0
+                                : Boolean(meal.querySelector('.photo-empty'));
+                        })"""
                     ),
                 )
 
@@ -146,11 +151,22 @@ def run():
 
                 page.locator(".meal-picture").first.click()
                 expect(page.locator("#dialog")).to_be_visible()
-                page.locator("#dialog img").evaluate("image => image.decode()")
+                dialog_image = page.locator("#dialog img")
+                if dialog_image.count():
+                    dialog_image.evaluate("image => image.decode()")
+                    credited = (
+                        page.get_by_role("link", name="Photo source").count() == 1
+                    )
+                else:
+                    expect(page.locator("#dialog .photo-empty")).to_be_visible()
+                    credited = (
+                        page.get_by_role("link", name="Recipe source").count() == 1
+                        and page.get_by_role("link", name="Content license").count()
+                        == 1
+                    )
                 check(
-                    "recipe dialog has a photograph, weighed ingredients and source credit",
-                    page.locator(".ingredients li").count() > 0
-                    and page.get_by_role("link", name="Photo source").count() == 1,
+                    "recipe dialog has media, weighed ingredients and source credit",
+                    page.locator(".ingredients li").count() > 0 and credited,
                 )
                 page.locator("#recipe-servings").fill("5")
                 page.locator("#recipe-servings").press("Tab")

@@ -47,7 +47,7 @@ Official data documentation: https://fdc.nal.usda.gov/data-documentation.html
 
 ## Recipe adaptations
 
-`data/planning-recipes.js` contains explicit, human-readable ingredient mappings and gram amounts for one base portion. They are adaptations, not a claim that the upstream recipe author supplied these nutritional portions. The descriptions document substitutions and added sides. Original photos can show the original dish rather than those adaptations.
+`data/planning-recipes.js`, `data/spreadsheet-recipes.js` and `data/open-planning-recipes.js` contain explicit, human-readable ingredient mappings and gram amounts for one base portion. Community entries are adaptations, not a claim that the upstream recipe author supplied these nutritional portions. The descriptions document substitutions and added sides. Original photos can show the original dish rather than those adaptations. The open planning pack is original OliveWeek content released under the project's MIT license.
 
 Source-only recipes in `data/community.json` preserve text ingredient quantities. They are available for browsing, but are not used by the automatic planner and have no invented nutrition totals. The recipe editor allows users to make a weighed copy after checking those quantities themselves.
 

@@ -10,16 +10,26 @@ const ctx=C.createContext(catalogue),p={...C.defaultPreferences(),startDate:'202
 const plan=()=>C.generatePlan(p,ctx,{seed:42});
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 
-test('catalogue has attributed photos and honest nutrition status',()=>{
-  assert.equal(catalogue.recipes.length,46);assert.ok(community.length>=1014);
+test('catalogue has provenance and honest nutrition status',()=>{
+  assert.equal(catalogue.recipes.length,246);assert.ok(community.length>=1014);
   assert.equal(catalogue.nutritionStatus,'generic-starter-estimates-not-verified');
   for(const f of catalogue.foods)assert.equal(f.source.type,'starter-estimate');
   for(const r of catalogue.recipes){
-    assert.ok(r.photo);assert.ok(r.author);
+    assert.ok(r.author);
     if(r.sourceCollection){assert.equal(r.sourceCollection,'RECIPES RECEPTES.xlsx');assert.match(r.sourceWorkbookSha256,/^[a-f0-9]{64}$/);assert.ok(r.photoSource.startsWith('https://commons.wikimedia.org/'));assert.ok(r.photoAuthor);assert.ok(r.photoLicense);}
-    else{assert.equal(r.collection,'Based Cooking');assert.ok(r.source.includes(r.revision));assert.ok(r.licenseSource.includes(r.revision));assert.ok(community.some(s=>s.id===r.sourceId));}
+    else if(r.collection==='OliveWeek Recipe Pack'){assert.equal(r.license,'MIT');assert.ok(r.source.startsWith('https://github.com/TomasOrtega/oliveweek'));assert.ok(r.licenseSource.endsWith('/LICENSE'));}
+    else{assert.ok(r.photo);assert.equal(r.collection,'Based Cooking');assert.ok(r.source.includes(r.revision));assert.ok(r.licenseSource.includes(r.revision));assert.ok(community.some(s=>s.id===r.sourceId));}
   }
   assert.equal(catalogue.recipes.filter(r=>r.sourceCollection).length,20);
+});
+test('open planning pack adds 100 breakfasts and 100 snacks',()=>{
+  const pack=catalogue.recipes.filter(r=>r.collection==='OliveWeek Recipe Pack');
+  assert.equal(pack.length,200);
+  assert.equal(pack.filter(r=>r.slots.length===1&&r.slots[0]==='breakfast').length,100);
+  assert.equal(pack.filter(r=>r.slots.length===1&&r.slots[0]==='snack').length,100);
+  assert.equal(new Set(pack.map(r=>r.name)).size,pack.length);
+  assert.equal(new Set(pack.map(r=>r.id)).size,pack.length);
+  assert.equal(new Set(catalogue.recipes.map(r=>r.name)).size,catalogue.recipes.length);
 });
 test('every bundled image is local and exactly matches its recorded checksum',async()=>{
   for(const r of [...community.filter(r=>r.photo),...catalogue.recipes.filter(r=>r.sourceCollection)]){assert.match(r.photo,/^assets\/recipes\/[\w-]+\.(webp|jpg|jpeg|png)$/);const bytes=await readFile(new URL('../dist/'+r.photo,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),r.imageSha256);}
