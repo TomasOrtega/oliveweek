@@ -18,7 +18,7 @@ test('catalogue has provenance and honest nutrition status',()=>{
   for(const r of catalogue.recipes){
     assert.ok(r.author);
     if(r.sourceCollection){assert.equal(r.sourceCollection,'RECIPES RECEPTES.xlsx');assert.match(r.sourceWorkbookSha256,/^[a-f0-9]{64}$/);assert.ok(r.photoSource.startsWith('https://commons.wikimedia.org/'));assert.ok(r.photoAuthor);assert.ok(r.photoLicense);}
-    else if(r.collection==='OliveWeek Recipe Pack'){assert.equal(r.license,'MIT');assert.ok(r.source.startsWith('https://github.com/TomasOrtega/oliveweek'));assert.ok(r.licenseSource.endsWith('/LICENSE'));assert.ok(r.photo);assert.ok(r.photoSource.startsWith('https://commons.wikimedia.org/'));assert.ok(r.photoAuthor);assert.ok(r.photoLicense);}
+    else if(r.collection==='OliveWeek Recipe Pack'){assert.equal(r.license,'MIT');assert.ok(r.source.startsWith('https://github.com/TomasOrtega/oliveweek'));assert.ok(r.licenseSource.endsWith('/LICENSE'));assert.ok(r.photo);assert.ok(r.photoSource.startsWith('https://'));assert.ok(r.photoAuthor);assert.ok(r.photoLicense);}
     else{assert.ok(r.photo);assert.equal(r.collection,'Based Cooking');assert.ok(r.source.includes(r.revision));assert.ok(r.licenseSource.includes(r.revision));assert.ok(community.some(s=>s.id===r.sourceId));}
   }
   assert.equal(catalogue.recipes.filter(r=>r.sourceCollection).length,20);
@@ -31,7 +31,11 @@ test('open planning pack adds 100 breakfasts and 100 snacks',()=>{
   assert.equal(new Set(pack.map(r=>r.name)).size,pack.length);
   assert.equal(new Set(pack.map(r=>r.id)).size,pack.length);
   assert.equal(new Set(catalogue.recipes.map(r=>r.name)).size,catalogue.recipes.length);
-  assert.equal(new Set(pack.map(r=>r.photo)).size,12);
+  assert.equal(new Set(pack.map(r=>r.photo)).size,pack.length);
+  assert.equal(new Set(pack.map(r=>r.photoSource)).size,pack.length);
+  assert.equal(new Set(pack.map(r=>r.imageSha256)).size,pack.length);
+  assert.equal(new Set(catalogue.recipes.map(r=>r.photo)).size,catalogue.recipes.length);
+  assert.equal(new Set(catalogue.recipes.map(r=>r.imageSha256)).size,catalogue.recipes.length);
 });
 test('every bundled image is local and exactly matches its recorded checksum',async()=>{
   const records=[...community.filter(r=>r.photo),...catalogue.recipes.filter(r=>r.sourceCollection||r.collection==='OliveWeek Recipe Pack')];

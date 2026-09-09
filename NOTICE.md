@@ -57,6 +57,6 @@ The blanket upstream licenses were not treated as independent permission to repu
 
 The UI, planner, storage layer, tests, build scripts, original mark, open planning recipe pack and explicit weighed recipe adaptations are distributed under the MIT license in `LICENSE`. The upstream public-domain content is not made proprietary by that license.
 
-The open planning recipe pack uses twelve representative Wikimedia Commons photographs across its recipe families. Individual author, source, license, retrieval date and checksum records are retained in `data/open-planning-photo-sources.json`. The photographs remain under their recorded source licenses.
+Every recipe in the open planning recipe pack uses a distinct photograph sourced through Openverse or Wikimedia Commons. Individual author, source, license, retrieval date and checksum records are retained in `data/open-planning-photo-sources.json`. The photographs remain under their recorded source licenses.
 
 No remote image service, stock-photo subscription or API credential is used. Generic ingredient nutrition estimates are separately described in `docs/NUTRITION.md` and are not attributed to a verified USDA import.

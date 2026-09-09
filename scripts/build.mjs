@@ -14,6 +14,7 @@ const publicDomainSource=JSON.parse(await readFile(resolve(root,'data/public-dom
 const historicalSource=JSON.parse(await readFile(resolve(root,'data/open-recipe-archive.json'),'utf8'));
 const spreadsheetPhotos=JSON.parse(await readFile(resolve(root,'data/spreadsheet-photo-sources.json'),'utf8'));
 const openPlanningPhotos=JSON.parse(await readFile(resolve(root,'data/open-planning-photo-sources.json'),'utf8'));
+const openPlanningPhotoById=new Map(openPlanningPhotos.map(({id,...photo})=>[id,photo]));
 // Explicit third-party attributions require separate permission, despite the
 // collection's blanket public-domain policy. Keep these out of every build.
 const excluded=new Set(['beef-tips','couscous','gumbo-shrimp-and-sausage','shrimp-and-grits','tuscan-style-pork-roast','yorkshire-puddings']);
@@ -22,7 +23,9 @@ const byId=new Map(community.map(r=>[r.id,r]));
 const communityRecipes=planningRecipes.map(r=>{
   const s=byId.get(r.sourceId);
   if(!s)throw new Error(`Recipe ${r.id} has no approved photographed source: ${r.sourceId}`);
-  return {...r,photo:s.photo,source:s.source,photoSource:s.photoSource,sourceName:s.name,collection:s.collection,author:s.author,license:s.license,licenseSource:s.licenseSource,revision:s.revision};
+  const p=r.photoId?openPlanningPhotoById.get(r.photoId):null;
+  if(r.photoId&&!p)throw new Error(`Recipe ${r.id} has no attributed photo override: ${r.photoId}`);
+  return {...r,photo:p?.photo||s.photo,source:s.source,photoSource:p?.photoSource||s.photoSource,photoAuthor:p?.photoAuthor,photoLicense:p?.photoLicense,photoLicenseUrl:p?.photoLicenseUrl,imageSha256:p?.imageSha256||s.imageSha256,sourceName:s.name,collection:s.collection,author:s.author,license:s.license,licenseSource:s.licenseSource,revision:s.revision};
 });
 const spreadsheetPhotoById=new Map(spreadsheetPhotos.map(({id,...photo})=>[id,photo]));
 const importedRecipes=spreadsheetRecipes.map(r=>{
@@ -30,7 +33,6 @@ const importedRecipes=spreadsheetRecipes.map(r=>{
   if(!photo)throw new Error(`Recipe ${r.id} has no attributed spreadsheet photo: ${r.photoId}`);
   return {...r,...photo,sourceName:r.name};
 });
-const openPlanningPhotoById=new Map(openPlanningPhotos.map(({id,...photo})=>[id,photo]));
 const openRecipes=openPlanningRecipes.map(r=>{
   const photo=openPlanningPhotoById.get(r.photoId);
   if(!photo)throw new Error(`Recipe ${r.id} has no attributed open-pack photo: ${r.photoId}`);
@@ -65,7 +67,7 @@ for(const path of ['index.html','styles.css','src','assets/mark.svg','manifest.w
 await mkdir(resolve(dist,'data'),{recursive:true});
 await writeFile(resolve(dist,'data/catalogue.json'),JSON.stringify(catalogue));
 await writeFile(resolve(dist,'data/community.json'),JSON.stringify(community));
-for(const photo of new Set([...community,...importedRecipes,...openRecipes].map(r=>r.photo).filter(Boolean))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
+for(const photo of new Set([...community,...importedRecipes,...openPlanningPhotos].map(r=>r.photo).filter(Boolean))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
 await cp(resolve(root,'vendor/based-cooking/LICENSE.txt'),resolve(dist,'RECIPE-LICENSE.txt'));
 await cp(resolve(root,'vendor/public-domain-recipes/LICENSE.txt'),resolve(dist,'PUBLIC-DOMAIN-RECIPES-LICENSE.txt'));
 await cp(resolve(root,'vendor/open-recipe-archive/LICENSE.txt'),resolve(dist,'OPEN-RECIPE-ARCHIVE-LICENSE.txt'));

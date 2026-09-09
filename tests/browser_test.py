@@ -48,7 +48,10 @@ def capture(page, name):
         const images = [...document.querySelectorAll('#main img, #dialog[open] img')];
         if (!images.length) throw new Error('No recipe photographs in the view');
         for (const image of images) image.loading = 'eager';
-        await Promise.all(images.map(image => image.decode()));
+        const results = await Promise.allSettled(images.map(image => image.decode()));
+        const failures = results.flatMap((result, index) =>
+            result.status === 'rejected' ? [images[index].currentSrc] : []);
+        if (failures.length) throw new Error('Images failed to decode: ' + failures.join(', '));
         await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
         return images.filter(image => image.complete && image.naturalWidth > 0).length;
     }""")
