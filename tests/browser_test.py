@@ -228,6 +228,14 @@ def run():
                 )
                 close_dialog(page)
 
+                page.locator("#recipe-search").fill("Spaghetti aglio e olio")
+                expect(page.locator(".recipe-tile")).to_have_count(1)
+                expect(page.locator(".recipe-tile .photo-empty")).to_be_visible()
+                page.locator(".tile-open").click()
+                expect(page.locator("#dialog")).to_contain_text("Public Domain Recipes")
+                expect(page.get_by_role("link", name="Content license")).to_be_visible()
+                close_dialog(page)
+
                 page.locator('.header nav a[href="#plan"]').click()
                 page.get_by_role("button", name="Save plan", exact=True).click()
                 page.locator('#dialog input[name="name"]').fill("Integration test week")

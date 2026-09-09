@@ -3,6 +3,7 @@
     "id": "bc-aelplermagronen",
     "slug": "aelplermagronen",
     "name": "Älplermagronen (Alpine macaroni)",
+    "collection": "Based Cooking",
     "author": "Alexander Bocken",
     "tags": [
       "swiss",
@@ -37,6 +38,7 @@
     "sourcePage": "https://based.cooking/aelplermagronen/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/aelplermagronen.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "5c3a573693bb9248d0219474c2fe352b5923f783a6e375d158e5572a95ca0fa7",
     "originalMarkdown": "vendor/based-cooking/aelplermagronen.md"
@@ -45,6 +47,7 @@
     "id": "bc-apple-chicken",
     "slug": "apple-chicken",
     "name": "Apple Chicken",
+    "collection": "Based Cooking",
     "author": "miraunpajaro",
     "tags": [
       "spanish",
@@ -81,6 +84,7 @@
     "sourcePage": "https://based.cooking/apple-chicken/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/apple-chicken.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "22143395f49cf4e77b369df2145767c950f127ae15c74eae0d45688edebf1ac2",
     "originalMarkdown": "vendor/based-cooking/apple-chicken.md"
@@ -89,6 +93,7 @@
     "id": "bc-apple-pie",
     "slug": "apple-pie",
     "name": "Apple Pie",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "dessert",
@@ -137,6 +142,7 @@
     "sourcePage": "https://based.cooking/apple-pie/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/apple-pie.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "12c848da8319f6625b6e98484a3500cd8f59caf285dc6bbdab0096e0f5a65a8c",
     "originalMarkdown": "vendor/based-cooking/apple-pie.md"
@@ -145,6 +151,7 @@
     "id": "bc-apple-strudel",
     "slug": "apple-strudel",
     "name": "Apple strudel",
+    "collection": "Based Cooking",
     "author": "Lorenzo Iuri",
     "tags": [
       "dessert",
@@ -176,6 +183,7 @@
     "sourcePage": "https://based.cooking/apple-strudel/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/apple-strudel.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d7ece0b44c9289f51ad271107d6add7ab46ee758743c0949d88e3acf0036a4db",
     "originalMarkdown": "vendor/based-cooking/apple-strudel.md"
@@ -184,6 +192,7 @@
     "id": "bc-ardei-umpluti",
     "slug": "ardei-umpluti",
     "name": "Ardei umpluti with meat",
+    "collection": "Based Cooking",
     "author": "miraunpajaro",
     "tags": [
       "romanian",
@@ -219,6 +228,7 @@
     "sourcePage": "https://based.cooking/ardei-umpluti/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/ardei-umpluti.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "f5d150ff7093220127f528cc0f2a28ae04f4bcec84d83fd7ab2cc660e7c4567a",
     "originalMarkdown": "vendor/based-cooking/ardei-umpluti.md"
@@ -227,6 +237,7 @@
     "id": "bc-arroz-chaufa",
     "slug": "arroz-chaufa",
     "name": "Arroz Chaufa",
+    "collection": "Based Cooking",
     "author": "Andy Rufasto",
     "tags": [
       "peruvian",
@@ -257,6 +268,7 @@
     "sourcePage": "https://based.cooking/arroz-chaufa/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/arroz-chaufa.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "7093a2387eeca7c5facc8b0f3b98ed74a3a56f50b45e2f6270ed4f0eb0822698",
     "originalMarkdown": "vendor/based-cooking/arroz-chaufa.md"
@@ -265,6 +277,7 @@
     "id": "bc-asian-style-chicken-sticky-sauce",
     "slug": "asian-style-chicken-sticky-sauce",
     "name": "Asian Style Chicken with Sticky Sauce",
+    "collection": "Based Cooking",
     "author": "pazu",
     "tags": [
       "asian",
@@ -304,6 +317,7 @@
     "sourcePage": "https://based.cooking/asian-style-chicken-sticky-sauce/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/asian-style-chicken-sticky-sauce.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "0e4e8118d3b42d1cbacb3ab90464bd755370893cf0732a9c351459ea0e629da3",
     "originalMarkdown": "vendor/based-cooking/asian-style-chicken-sticky-sauce.md"
@@ -312,6 +326,7 @@
     "id": "bc-assam-tea",
     "slug": "assam-tea",
     "name": "Assam Tea",
+    "collection": "Based Cooking",
     "author": "Chandra Kiran",
     "tags": [
       "drink",
@@ -335,6 +350,7 @@
     "sourcePage": "https://based.cooking/assam-tea/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/assam-tea.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "aebdb762cdad4e1b0af4c77cd22c0a14e7208edd7358f9f017870ed9f3c6e7df",
     "originalMarkdown": "vendor/based-cooking/assam-tea.md"
@@ -343,6 +359,7 @@
     "id": "bc-baked-pasta-with-broccoli",
     "slug": "baked-pasta-with-broccoli",
     "name": "Baked pasta with broccoli, boiled eggs and scamorza cheese",
+    "collection": "Based Cooking",
     "author": "Davide Costa",
     "tags": [
       "italian",
@@ -377,6 +394,7 @@
     "sourcePage": "https://based.cooking/baked-pasta-with-broccoli/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/baked-pasta-with-broccoli.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "cab83e66cc80eac6791e15d21a146b47aee8177b085bf120f5eed240309d681f",
     "originalMarkdown": "vendor/based-cooking/baked-pasta-with-broccoli.md"
@@ -385,6 +403,7 @@
     "id": "bc-banana-muffins-with-chocolate",
     "slug": "banana-muffins-with-chocolate",
     "name": "Banana Muffins with Chocolate",
+    "collection": "Based Cooking",
     "author": "Łukasz Drukała",
     "tags": [
       "dessert",
@@ -419,6 +438,7 @@
     "sourcePage": "https://based.cooking/banana-muffins-with-chocolate/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/banana-muffins.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "0203888b9680f717a26e7edccaf8a4f3a0e8a14dbb2b55eac75f6ff5b14a1545",
     "originalMarkdown": "vendor/based-cooking/banana-muffins-with-chocolate.md"
@@ -427,6 +447,7 @@
     "id": "bc-basic-waffles",
     "slug": "basic-waffles",
     "name": "Basic Waffles",
+    "collection": "Based Cooking",
     "author": "logianer",
     "tags": [
       "sweet",
@@ -457,6 +478,7 @@
     "sourcePage": "https://based.cooking/basic-waffles/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/basic-waffles-01.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "8913a7acd60568f84eab10ec830f540d08221b8bd2d0682de30a0dc2b88c2231",
     "originalMarkdown": "vendor/based-cooking/basic-waffles.md"
@@ -465,6 +487,7 @@
     "id": "bc-beef-goulash",
     "slug": "beef-goulash",
     "name": "Beef Goulash",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "beef",
@@ -505,6 +528,7 @@
     "sourcePage": "https://based.cooking/beef-goulash/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/beef-goulash.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "33162c3015c564a92cb820f77b2beda72ebcfa403ed91ee387b087aaa503e2d9",
     "originalMarkdown": "vendor/based-cooking/beef-goulash.md"
@@ -513,6 +537,7 @@
     "id": "bc-beijinho",
     "slug": "beijinho",
     "name": "Beijinho",
+    "collection": "Based Cooking",
     "author": "Georis Samuel",
     "tags": [
       "dessert",
@@ -542,6 +567,7 @@
     "sourcePage": "https://based.cooking/beijinho/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/beijinho.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "ff3201c40930ec4944bae2af2069afb432795f3b00a4f9f3f17f46f08ed21ca4",
     "originalMarkdown": "vendor/based-cooking/beijinho.md"
@@ -550,6 +576,7 @@
     "id": "bc-blueberry-smoothie",
     "slug": "blueberry-smoothie",
     "name": "Blueberry Smoothie",
+    "collection": "Based Cooking",
     "author": "Riley Ross",
     "tags": [
       "fruit",
@@ -575,6 +602,7 @@
     "sourcePage": "https://based.cooking/blueberry-smoothie/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/blueberry-smoothie.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "ecc5d8047954350dbfac9a7fdf0bde2ddf01a48ce3307c310fde6a53b26210f8",
     "originalMarkdown": "vendor/based-cooking/blueberry-smoothie.md"
@@ -583,6 +611,7 @@
     "id": "bc-bolognese-sauce",
     "slug": "bolognese-sauce",
     "name": "Bolognese Sauce",
+    "collection": "Based Cooking",
     "author": "Tait",
     "tags": [
       "sauce",
@@ -628,6 +657,7 @@
     "sourcePage": "https://based.cooking/bolognese-sauce/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/bolognese-sauce.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d9a532fd7136581ea62f3571051a4c94d945409a0c0b279257bb8d37edcddd72",
     "originalMarkdown": "vendor/based-cooking/bolognese-sauce.md"
@@ -636,6 +666,7 @@
     "id": "bc-bread",
     "slug": "bread",
     "name": "Bread",
+    "collection": "Based Cooking",
     "author": "Alex Selimov",
     "tags": [
       "basic",
@@ -669,6 +700,7 @@
     "sourcePage": "https://based.cooking/bread/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/bread.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "7993d529fcb5139eb64b3b651ff1e42b5aa3f1121e2bfd5fb4fbc6dd30193f6f",
     "originalMarkdown": "vendor/based-cooking/bread.md"
@@ -677,6 +709,7 @@
     "id": "bc-brigadeiro",
     "slug": "brigadeiro",
     "name": "Brigadeiro",
+    "collection": "Based Cooking",
     "author": "Daniel Kemmerich",
     "tags": [
       "dessert",
@@ -702,6 +735,7 @@
     "sourcePage": "https://based.cooking/brigadeiro/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/brigadeiro.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "832b843ee5c64cf61812a1780221fdbf1facb1551a2ab6b6289b842cb621d32f",
     "originalMarkdown": "vendor/based-cooking/brigadeiro.md"
@@ -710,6 +744,7 @@
     "id": "bc-burger-dressing",
     "slug": "burger-dressing",
     "name": "Hamburger dressing",
+    "collection": "Based Cooking",
     "author": "brox",
     "tags": [
       "sauce",
@@ -731,6 +766,7 @@
     "sourcePage": "https://based.cooking/burger-dressing/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/burger-dressing.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "2b1aece8e062e208f37df02c97d9278bc13baad20c00f749b033d642598a295f",
     "originalMarkdown": "vendor/based-cooking/burger-dressing.md"
@@ -739,6 +775,7 @@
     "id": "bc-butter-chicken-masala",
     "slug": "butter-chicken-masala",
     "name": "Butter Chicken Masala Curry",
+    "collection": "Based Cooking",
     "author": "Nihar Samantaray",
     "tags": [
       "indian",
@@ -776,6 +813,7 @@
     "sourcePage": "https://based.cooking/butter-chicken-masala/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/butter-chicken-masala.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "0b7427335e52cb236d032b2401d0c34ec805f1b7220933335dd0efc619edf476",
     "originalMarkdown": "vendor/based-cooking/butter-chicken-masala.md"
@@ -784,6 +822,7 @@
     "id": "bc-cacio-e-pepe",
     "slug": "cacio-e-pepe",
     "name": "Cacio e Pepe",
+    "collection": "Based Cooking",
     "author": "siedes",
     "tags": [
       "italian",
@@ -812,6 +851,7 @@
     "sourcePage": "https://based.cooking/cacio-e-pepe/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/cacio-e-pepe.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c78c8e5ab026c1fa877a38cd7f82f2fc634d013db1b1f9ea61efe280254dedf1",
     "originalMarkdown": "vendor/based-cooking/cacio-e-pepe.md"
@@ -820,6 +860,7 @@
     "id": "bc-caesar-salad",
     "slug": "caesar-salad",
     "name": "Caesar Salad",
+    "collection": "Based Cooking",
     "author": "gucko",
     "tags": [
       "italian",
@@ -845,6 +886,7 @@
     "sourcePage": "https://based.cooking/caesar-salad/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/csalad.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d67ba83ac237250025a598b7d9188b9cef115d3c43fdf44d004e6ab7e0b0d924",
     "originalMarkdown": "vendor/based-cooking/caesar-salad.md"
@@ -853,6 +895,7 @@
     "id": "bc-carbonara",
     "slug": "carbonara",
     "name": "Carbonara",
+    "collection": "Based Cooking",
     "author": "Peter Piontek, Ladislao Blanchi",
     "tags": [
       "italian",
@@ -880,6 +923,7 @@
     "sourcePage": "https://based.cooking/carbonara/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/carbonara.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b150c2273557509b524fc1305f1084e2002021d8ccaad56b8e1e8dc40acfdfbc",
     "originalMarkdown": "vendor/based-cooking/carbonara.md"
@@ -888,6 +932,7 @@
     "id": "bc-casio-in-pastelletto",
     "slug": "casio-in-pastelletto",
     "name": "Casio in pastelletto",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "cheese",
@@ -914,6 +959,7 @@
     "sourcePage": "https://based.cooking/casio-in-pastelletto/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/casio-in-pastelletto.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "3b5761b61b22dd6b75e9bd60b7f6b1a8c00b7138fe0c9bea9bf55f06616092bf",
     "originalMarkdown": "vendor/based-cooking/casio-in-pastelletto.md"
@@ -922,6 +968,7 @@
     "id": "bc-castagnole",
     "slug": "castagnole",
     "name": "Castagnole",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "fry",
@@ -953,6 +1000,7 @@
     "sourcePage": "https://based.cooking/castagnole/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/castagnole.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "0d24472fbd898ed30e548e5cc167c3f745dede21abc563ae85a93f046d42af1a",
     "originalMarkdown": "vendor/based-cooking/castagnole.md"
@@ -961,6 +1009,7 @@
     "id": "bc-ceviche",
     "slug": "ceviche",
     "name": "Ceviche",
+    "collection": "Based Cooking",
     "author": "Jacob Smith",
     "tags": [
       "seafood",
@@ -983,6 +1032,7 @@
     "sourcePage": "https://based.cooking/ceviche/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/ceviche.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "bd6a1fc733ae3279d911daa1a920b26c2aff6a14d544f5c3725611f1ef5cb52a",
     "originalMarkdown": "vendor/based-cooking/ceviche.md"
@@ -991,6 +1041,7 @@
     "id": "bc-cheesy-ham-and-potato-bake",
     "slug": "cheesy-ham-and-potato-bake",
     "name": "Cheesy Ham and Potato Bake",
+    "collection": "Based Cooking",
     "author": "NestNik",
     "tags": [
       "pork",
@@ -1023,6 +1074,7 @@
     "sourcePage": "https://based.cooking/cheesy-ham-and-potato-bake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/cheesy-ham-and-potato-bake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6bb97006a9b6f57f46c006904ef1cba81eadfd8030b0d3b82a657afb65683f86",
     "originalMarkdown": "vendor/based-cooking/cheesy-ham-and-potato-bake.md"
@@ -1031,6 +1083,7 @@
     "id": "bc-cheesy-meatballs",
     "slug": "cheesy-meatballs",
     "name": "Cheesy Meatballs with Tomato Sauce",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "beef",
@@ -1070,6 +1123,7 @@
     "sourcePage": "https://based.cooking/cheesy-meatballs/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/cheesy-meatballs.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "9b271020ac7eae5120280f34f97072ba9110861a9ebb1e1e9bfe6995a96b282c",
     "originalMarkdown": "vendor/based-cooking/cheesy-meatballs.md"
@@ -1078,6 +1132,7 @@
     "id": "bc-chicken-pasta-casserole",
     "slug": "chicken-pasta-casserole",
     "name": "Chicken Pasta Casserole",
+    "collection": "Based Cooking",
     "author": "Miika Nissi",
     "tags": [
       "chicken",
@@ -1107,6 +1162,7 @@
     "sourcePage": "https://based.cooking/chicken-pasta-casserole/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/chicken-pasta-casserole.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b59469377a8614c28a10ef49e0d3dd4582ff8091c6795dc7ffb099bc52ef7899",
     "originalMarkdown": "vendor/based-cooking/chicken-pasta-casserole.md"
@@ -1115,6 +1171,7 @@
     "id": "bc-chocolate-chip-cookies",
     "slug": "chocolate-chip-cookies",
     "name": "Chocolate Chip Cookies ",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "dessert",
@@ -1149,6 +1206,7 @@
     "sourcePage": "https://based.cooking/chocolate-chip-cookies/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/chocolate-chip-cookies.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "7bc1b4a752f75de455216e76a0ac041875f383f24e61d0b97ac5ac35a1d5b6d5",
     "originalMarkdown": "vendor/based-cooking/chocolate-chip-cookies.md"
@@ -1157,6 +1215,7 @@
     "id": "bc-chocolate_cake",
     "slug": "chocolate_cake",
     "name": "Chocolate Cake",
+    "collection": "Based Cooking",
     "author": "segf00lt",
     "tags": [
       "chocolate",
@@ -1192,6 +1251,7 @@
     "sourcePage": "https://based.cooking/chocolate_cake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/chocolate_cake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "46e181cc43d58b3ed16bb0452c997838da61c41e033dd8b8e6bc5eef3442d1bd",
     "originalMarkdown": "vendor/based-cooking/chocolate_cake.md"
@@ -1200,6 +1260,7 @@
     "id": "bc-cinnaroll",
     "slug": "cinnaroll",
     "name": "Cinnamon Rolls",
+    "collection": "Based Cooking",
     "author": "The Infinity Pizza",
     "tags": [
       "dessert",
@@ -1235,6 +1296,7 @@
     "sourcePage": "https://based.cooking/cinnaroll/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/cinnaroll.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "083876837df64ecbf74c6c57c606e462b8f929d3c0f892d92621620877d8f1fa",
     "originalMarkdown": "vendor/based-cooking/cinnaroll.md"
@@ -1243,6 +1305,7 @@
     "id": "bc-cinque-pi",
     "slug": "cinque-pi",
     "name": "Cinque Pi",
+    "collection": "Based Cooking",
     "author": "Elias Pahls",
     "tags": [
       "italian",
@@ -1271,6 +1334,7 @@
     "sourcePage": "https://based.cooking/cinque-pi/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/cinque-pi.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d45eba9cf5f7a38b30908cd5e9bb4edbf4aff7d44c13a0c1ad9a48217938cacf",
     "originalMarkdown": "vendor/based-cooking/cinque-pi.md"
@@ -1279,6 +1343,7 @@
     "id": "bc-coconut-flour-bread",
     "slug": "coconut-flour-bread",
     "name": "Keto Coconut Bread",
+    "collection": "Based Cooking",
     "author": "Luis Fernando Maschietto Junior",
     "tags": [
       "bread",
@@ -1310,6 +1375,7 @@
     "sourcePage": "https://based.cooking/coconut-flour-bread/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/coconutbread-lufemas.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "0e2171ae7ab8ae81139a3795d8c043672e7cf2e47b2788e3e9fc193a50ecbad1",
     "originalMarkdown": "vendor/based-cooking/coconut-flour-bread.md"
@@ -1318,6 +1384,7 @@
     "id": "bc-country-skillet",
     "slug": "country-skillet",
     "name": "Country Breakfast Skillet",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "american",
@@ -1355,6 +1422,7 @@
     "sourcePage": "https://based.cooking/country-skillet/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/country-skillet.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "841d700dc223e11390a1b80c09ba6d033c66772cc7afef96651884f5b062fa0c",
     "originalMarkdown": "vendor/based-cooking/country-skillet.md"
@@ -1363,6 +1431,7 @@
     "id": "bc-crab-salad",
     "slug": "crab-salad",
     "name": "Crab salad",
+    "collection": "Based Cooking",
     "author": "Based Cooking contributors",
     "tags": [
       "salad",
@@ -1391,6 +1460,7 @@
     "sourcePage": "https://based.cooking/crab-salad/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/crab-salad.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "46ef4f36e103e4ad28c4a5d670e2b26293133314cc5bc0ad0311318a2e7a8a60",
     "originalMarkdown": "vendor/based-cooking/crab-salad.md"
@@ -1399,6 +1469,7 @@
     "id": "bc-creamy-mashed-potatoes",
     "slug": "creamy-mashed-potatoes",
     "name": "Creamy Mashed Potatoes",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "potato",
@@ -1434,6 +1505,7 @@
     "sourcePage": "https://based.cooking/creamy-mashed-potatoes/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/creamy-mashed-potatoes.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "bd30ec11910a158fee0474b10c5601e8fa0aef055f9f99a8a5fda2f0c5c79ba8",
     "originalMarkdown": "vendor/based-cooking/creamy-mashed-potatoes.md"
@@ -1442,6 +1514,7 @@
     "id": "bc-croque-monsieur",
     "slug": "croque-monsieur",
     "name": "Croque-monsieur bites",
+    "collection": "Based Cooking",
     "author": "SofianeHamlaoui",
     "tags": [
       "quick",
@@ -1477,6 +1550,7 @@
     "sourcePage": "https://based.cooking/croque-monsieur/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/croque-monsieur.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b406cf6391df25ffc4ce82805aa3f352d0131abdeb209761225fef720e513664",
     "originalMarkdown": "vendor/based-cooking/croque-monsieur.md"
@@ -1485,6 +1559,7 @@
     "id": "bc-crostata",
     "slug": "crostata",
     "name": "Crostata",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "baking",
@@ -1513,6 +1588,7 @@
     "sourcePage": "https://based.cooking/crostata/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/crostata.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a15285f3670cabe9824dbd0d9a4e5fb46b90c7d879ca092f39befc97d3d06c53",
     "originalMarkdown": "vendor/based-cooking/crostata.md"
@@ -1521,6 +1597,7 @@
     "id": "bc-croutons",
     "slug": "croutons",
     "name": "Croutons",
+    "collection": "Based Cooking",
     "author": "gucko",
     "tags": [
       "basic",
@@ -1545,6 +1622,7 @@
     "sourcePage": "https://based.cooking/croutons/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/croutons.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "8698c445e8bdcc49de56a8b903118397e8e1f825146f7791f202e9fff16cc81a",
     "originalMarkdown": "vendor/based-cooking/croutons.md"
@@ -1553,6 +1631,7 @@
     "id": "bc-danish-pancake",
     "slug": "danish-pancake",
     "name": "Danish Pancake",
+    "collection": "Based Cooking",
     "author": "Jesper",
     "tags": [
       "quick",
@@ -1581,6 +1660,7 @@
     "sourcePage": "https://based.cooking/danish-pancake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/danish-pancake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b05ad004c324adc4d64375aad613ce7a8c23534747b286be5da2b0956ab817df",
     "originalMarkdown": "vendor/based-cooking/danish-pancake.md"
@@ -1589,6 +1669,7 @@
     "id": "bc-diannes-southwest-salad",
     "slug": "diannes-southwest-salad",
     "name": "Dianne's Southwestern Cornbread Salad",
+    "collection": "Based Cooking",
     "author": "Based Cooking contributors",
     "tags": [
       "salad",
@@ -1615,6 +1696,7 @@
     "sourcePage": "https://based.cooking/diannes-southwest-salad/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/diannes-cornbread-salad.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "ca2e495d2d08c60b77fe0a3b3cd8fb6927dc90d3f2c526eedf5e1bcedae901ba",
     "originalMarkdown": "vendor/based-cooking/diannes-southwest-salad.md"
@@ -1623,6 +1705,7 @@
     "id": "bc-dou-sha-bao",
     "slug": "dou-sha-bao",
     "name": "Red Bean Buns (豆沙包)",
+    "collection": "Based Cooking",
     "author": "TuFeK Yamero",
     "tags": [
       "chinese",
@@ -1662,6 +1745,7 @@
     "sourcePage": "https://based.cooking/dou-sha-bao/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/dou-sha-bao.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "266363ab05591fa82779910b77e6236836f297a2083843ee649121b6fa5ea9ff",
     "originalMarkdown": "vendor/based-cooking/dou-sha-bao.md"
@@ -1670,6 +1754,7 @@
     "id": "bc-easy-pizza-sauce",
     "slug": "easy-pizza-sauce",
     "name": "Easy Pizza Sauce",
+    "collection": "Based Cooking",
     "author": "Leopold Johannes Meinel",
     "tags": [
       "pizza",
@@ -1702,6 +1787,7 @@
     "sourcePage": "https://based.cooking/easy-pizza-sauce/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/easy-pizza-sauce.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "fb394822fab16cd09bec892ac8e734057f0a5ce4619d6c6428d22b66a7e4cabf",
     "originalMarkdown": "vendor/based-cooking/easy-pizza-sauce.md"
@@ -1710,6 +1796,7 @@
     "id": "bc-eggs-benedict",
     "slug": "eggs-benedict",
     "name": "Eggs Benedict",
+    "collection": "Based Cooking",
     "author": "Enzo Stever",
     "tags": [
       "breakfast",
@@ -1746,6 +1833,7 @@
     "sourcePage": "https://based.cooking/eggs-benedict/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/eggs-benedict.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6c6517805d61402a84d13805693ada3d557e847791014996251f49e49e7593c0",
     "originalMarkdown": "vendor/based-cooking/eggs-benedict.md"
@@ -1754,6 +1842,7 @@
     "id": "bc-fall-vegetable-and-chickpea-curry",
     "slug": "fall-vegetable-and-chickpea-curry",
     "name": "Fall Vegetable and Chickpea Curry",
+    "collection": "Based Cooking",
     "author": "Joel Maxuel",
     "tags": [
       "fasting",
@@ -1785,6 +1874,7 @@
     "sourcePage": "https://based.cooking/fall-vegetable-and-chickpea-curry/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/fall-vegetable-and-chickpea-curry.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a261f3fd9e36bbe98359818716f4fdbf3da7a5963de9cd1d78f5ce222d675fd9",
     "originalMarkdown": "vendor/based-cooking/fall-vegetable-and-chickpea-curry.md"
@@ -1793,6 +1883,7 @@
     "id": "bc-farci-tomatoes",
     "slug": "farci-tomatoes",
     "name": "Farci tomatoes",
+    "collection": "Based Cooking",
     "author": "miraunpajaro",
     "tags": [
       "french",
@@ -1826,6 +1917,7 @@
     "sourcePage": "https://based.cooking/farci-tomatoes/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/farci-tomatoes.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e22eb0adaaceee5dc11a009cb86888acc43dd39a01af36988fc990060e6b9be4",
     "originalMarkdown": "vendor/based-cooking/farci-tomatoes.md"
@@ -1834,6 +1926,7 @@
     "id": "bc-fennel-beans-and-kale-soup",
     "slug": "fennel-beans-and-kale-soup",
     "name": "Fennel White Bean and Kale Soup",
+    "collection": "Based Cooking",
     "author": "Zyansheep",
     "tags": [
       "soup",
@@ -1868,6 +1961,7 @@
     "sourcePage": "https://based.cooking/fennel-beans-and-kale-soup/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/fennel-bean-kale-soup.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e276e08d01657167533c62dc977af07bf6a7cbdbdcf78a128c4b9133d24ffdae",
     "originalMarkdown": "vendor/based-cooking/fennel-beans-and-kale-soup.md"
@@ -1876,6 +1970,7 @@
     "id": "bc-french-toast",
     "slug": "french-toast",
     "name": "French Toast",
+    "collection": "Based Cooking",
     "author": "Ryan Wilson",
     "tags": [
       "breakfast",
@@ -1907,6 +2002,7 @@
     "sourcePage": "https://based.cooking/french-toast/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/french-toast.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "f85946b7f315dac8c9d27dd0028a33d0219d08ddf52bdb0499acb9c1dc7ec431",
     "originalMarkdown": "vendor/based-cooking/french-toast.md"
@@ -1915,6 +2011,7 @@
     "id": "bc-fried-anglerfish-fillet",
     "slug": "fried-anglerfish-fillet",
     "name": "Fried Anglerfish fillet",
+    "collection": "Based Cooking",
     "author": "Shou",
     "tags": [
       "fish",
@@ -1944,6 +2041,7 @@
     "sourcePage": "https://based.cooking/fried-anglerfish-fillet/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/fried-anglerfish-fillet.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "40dc8accd094e837575dabf70fc5dde734abdd5eb9dfb8271e6bcdf90068e85d",
     "originalMarkdown": "vendor/based-cooking/fried-anglerfish-fillet.md"
@@ -1952,6 +2050,7 @@
     "id": "bc-fritatem-pomeranciis",
     "slug": "fritatem-pomeranciis",
     "name": "Fritatem pomeranciis",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "cream",
@@ -1978,6 +2077,7 @@
     "sourcePage": "https://based.cooking/fritatem-pomeranciis/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/fritatem-pomeranciis.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "83324aef480575557f87b00ce1819c637f5451e330954edf2f29ad968bc816f2",
     "originalMarkdown": "vendor/based-cooking/fritatem-pomeranciis.md"
@@ -1986,6 +2086,7 @@
     "id": "bc-fume-sauce",
     "slug": "fume-sauce",
     "name": "Fumé sauce",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "cheesefare",
@@ -2015,6 +2116,7 @@
     "sourcePage": "https://based.cooking/fume-sauce/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/fume-sauce.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "31b68981c03be377d4cf5b292607fc38df4abaeac8ceb1c794982b76ab98b109",
     "originalMarkdown": "vendor/based-cooking/fume-sauce.md"
@@ -2023,6 +2125,7 @@
     "id": "bc-granita",
     "slug": "granita",
     "name": "Granita",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "fasting",
@@ -2053,6 +2156,7 @@
     "sourcePage": "https://based.cooking/granita/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/granita.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "720f296a9f0d9465561a9503c82a375059d70ce91494f4dd80e45454733cf3d7",
     "originalMarkdown": "vendor/based-cooking/granita.md"
@@ -2061,6 +2165,7 @@
     "id": "bc-guacamole",
     "slug": "guacamole",
     "name": "Fresh Guacamole",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "mexican",
@@ -2088,6 +2193,7 @@
     "sourcePage": "https://based.cooking/guacamole/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/guacamole.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c837a806268ce2a23f18b2e38ea2c3b0261e04b45b0798bd9a7afd6bf9c8b439",
     "originalMarkdown": "vendor/based-cooking/guacamole.md"
@@ -2096,6 +2202,7 @@
     "id": "bc-hearty-breakfast-oatmeal",
     "slug": "hearty-breakfast-oatmeal",
     "name": "Hearty Breakfast Oatmeal ",
+    "collection": "Based Cooking",
     "author": "Joel Farthing",
     "tags": [
       "breakfast",
@@ -2127,6 +2234,7 @@
     "sourcePage": "https://based.cooking/hearty-breakfast-oatmeal/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/hearty-breakfast-oatmeal.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "9108c51176273a57650923087cf21577b5d4573ee0f5e2ce671670a204e8347d",
     "originalMarkdown": "vendor/based-cooking/hearty-breakfast-oatmeal.md"
@@ -2135,6 +2243,7 @@
     "id": "bc-herbs-pizza",
     "slug": "herbs-pizza",
     "name": "Herbs pizza",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "cheesefare",
@@ -2173,6 +2282,7 @@
     "sourcePage": "https://based.cooking/herbs-pizza/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/herbs-pizza.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "88bb9895fcdd4a7329079d0ffb7040cfe47c00e5f3f8c99730bc92206bb3a12a",
     "originalMarkdown": "vendor/based-cooking/herbs-pizza.md"
@@ -2181,6 +2291,7 @@
     "id": "bc-hoisin-pork-belly",
     "slug": "hoisin-pork-belly",
     "name": "Hoisin Pork Belly",
+    "collection": "Based Cooking",
     "author": "speaker scorned",
     "tags": [
       "chinese",
@@ -2213,6 +2324,7 @@
     "sourcePage": "https://based.cooking/hoisin-pork-belly/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/hoisin-pork-belly.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6d33d3a85e8497fb243a01a366a1d5dde3ab7a3a4ab00a7cfbd86d1fa16896df",
     "originalMarkdown": "vendor/based-cooking/hoisin-pork-belly.md"
@@ -2221,6 +2333,7 @@
     "id": "bc-honey-sriracha-chicken-thighs",
     "slug": "honey-sriracha-chicken-thighs",
     "name": "Honey Sriracha Chicken Thighs",
+    "collection": "Based Cooking",
     "author": "Kevin Anderson",
     "tags": [
       "chicken",
@@ -2253,6 +2366,7 @@
     "sourcePage": "https://based.cooking/honey-sriracha-chicken-thighs/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/honey-sriracha-chicken-thighs.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "40de88061f61deba7446bf357328fe32a8d589496d91569d29b09de6e978a8ac",
     "originalMarkdown": "vendor/based-cooking/honey-sriracha-chicken-thighs.md"
@@ -2261,6 +2375,7 @@
     "id": "bc-hummus",
     "slug": "hummus",
     "name": "Hummus",
+    "collection": "Based Cooking",
     "author": "Jacob Smith",
     "tags": [
       "basic",
@@ -2299,6 +2414,7 @@
     "sourcePage": "https://based.cooking/hummus/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/hummus.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "ff8bc311b252e64828559c7bc797ffca29758d7650e1371fa92a029c00f98300",
     "originalMarkdown": "vendor/based-cooking/hummus.md"
@@ -2307,6 +2423,7 @@
     "id": "bc-italian-mulled-wine",
     "slug": "italian-mulled-wine",
     "name": "Italian Mulled Wine",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "alcohol",
@@ -2350,6 +2467,7 @@
     "sourcePage": "https://based.cooking/italian-mulled-wine/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/italian-mulled-wine.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "4b8c7efe62a2b7988805e85e3082f4306d4abe8a2c3b16bf7c8e0001fd989590",
     "originalMarkdown": "vendor/based-cooking/italian-mulled-wine.md"
@@ -2358,6 +2476,7 @@
     "id": "bc-jam",
     "slug": "jam",
     "name": "Jam",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "fasting",
@@ -2383,6 +2502,7 @@
     "sourcePage": "https://based.cooking/jam/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/jam.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e32f0117f6e842e6483f51d09b772d5ce548e47fde69466cd9e3e4d4f90ecdac",
     "originalMarkdown": "vendor/based-cooking/jam.md"
@@ -2391,6 +2511,7 @@
     "id": "bc-japanese-noodle-soup",
     "slug": "japanese-noodle-soup",
     "name": "Japanese Noodle Soup",
+    "collection": "Based Cooking",
     "author": "Jake Keast",
     "tags": [
       "japanese",
@@ -2432,6 +2553,7 @@
     "sourcePage": "https://based.cooking/japanese-noodle-soup/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/japanese-noodle-soup.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "fb435bfb04ed7ef9cc708cfd5bf4f8789fc5bf601acdb8a4769582457c22a9d5",
     "originalMarkdown": "vendor/based-cooking/japanese-noodle-soup.md"
@@ -2440,6 +2562,7 @@
     "id": "bc-korv-stroganoff",
     "slug": "korv-stroganoff",
     "name": "Korv Stroganoff",
+    "collection": "Based Cooking",
     "author": "Based Cooking contributors",
     "tags": [
       "swedish",
@@ -2469,6 +2592,7 @@
     "sourcePage": "https://based.cooking/korv-stroganoff/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/korv-stroganoff.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "f8b562651227ba68b8969dcd17d14190248cedc461f4df4530e18bc77fd286ee",
     "originalMarkdown": "vendor/based-cooking/korv-stroganoff.md"
@@ -2477,6 +2601,7 @@
     "id": "bc-kropsua",
     "slug": "kropsua",
     "name": "Kropsua (Finnish Baked Pancake)",
+    "collection": "Based Cooking",
     "author": "albert-elmore",
     "tags": [
       "finnish",
@@ -2509,6 +2634,7 @@
     "sourcePage": "https://based.cooking/kropsua/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/kropsua.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "7a15d9832e7a1b85e9d2b08993d1c0733656fc6b71081137ab6d7460d683bca2",
     "originalMarkdown": "vendor/based-cooking/kropsua.md"
@@ -2517,6 +2643,7 @@
     "id": "bc-lamb-biriyani",
     "slug": "lamb-biriyani",
     "name": "Lamb Biriyani",
+    "collection": "Based Cooking",
     "author": "Ram Pari",
     "tags": [
       "lamb",
@@ -2564,6 +2691,7 @@
     "sourcePage": "https://based.cooking/lamb-biriyani/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lamb-biriyani.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "380a96638268f9fd7f5f363a9c3205da39ff5606d2cd01ebd180ed3ba8f4bf33",
     "originalMarkdown": "vendor/based-cooking/lamb-biriyani.md"
@@ -2572,6 +2700,7 @@
     "id": "bc-lasagna",
     "slug": "lasagna",
     "name": "Lasagna",
+    "collection": "Based Cooking",
     "author": "Yiusa",
     "tags": [
       "italian",
@@ -2603,6 +2732,7 @@
     "sourcePage": "https://based.cooking/lasagna/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lasagna.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "bc505b3d1ff3a8407559a57d6d127919c2ddf6183ec46521b69923adc4bd9115",
     "originalMarkdown": "vendor/based-cooking/lasagna.md"
@@ -2611,6 +2741,7 @@
     "id": "bc-lavacake",
     "slug": "lavacake",
     "name": "Lavacake",
+    "collection": "Based Cooking",
     "author": "Benjamin H",
     "tags": [
       "chocolate",
@@ -2637,6 +2768,7 @@
     "sourcePage": "https://based.cooking/lavacake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lavacake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "05be84d8c7abda36a2f45f1174ccd11e6983315355070e7309d5388372c9744e",
     "originalMarkdown": "vendor/based-cooking/lavacake.md"
@@ -2645,6 +2777,7 @@
     "id": "bc-lemon-and-oregano-chicken-traybake",
     "slug": "lemon-and-oregano-chicken-traybake",
     "name": "Lemon and oregano chicken traybake",
+    "collection": "Based Cooking",
     "author": "Isaac Hill",
     "tags": [
       "mediterranean",
@@ -2673,6 +2806,7 @@
     "sourcePage": "https://based.cooking/lemon-and-oregano-chicken-traybake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lemon-and-oregano-chicken-traybake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "9983445a9b5a4510fe474e3351422d3f5dc80e865e223460ba4543c2bb72eb2c",
     "originalMarkdown": "vendor/based-cooking/lemon-and-oregano-chicken-traybake.md"
@@ -2681,6 +2815,7 @@
     "id": "bc-lentejas",
     "slug": "lentejas",
     "name": "Sopa de Lentejas",
+    "collection": "Based Cooking",
     "author": "Nacchofer31",
     "tags": [
       "spanish"
@@ -2711,6 +2846,7 @@
     "sourcePage": "https://based.cooking/lentejas/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lentejas.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "44696551e97b56358c296e9e9914174677fa317332cbae3f76cbd2d0969462e0",
     "originalMarkdown": "vendor/based-cooking/lentejas.md"
@@ -2719,6 +2855,7 @@
     "id": "bc-lenten-chili",
     "slug": "lenten-chili",
     "name": "Lenten Chili",
+    "collection": "Based Cooking",
     "author": "Yorge Z",
     "tags": [
       "fasting"
@@ -2755,6 +2892,7 @@
     "sourcePage": "https://based.cooking/lenten-chili/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lenten-chili.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "058207bb0ad5a8639cec6071ff5c48bba97e7a9c9c815a27e662935d9ad7ab84",
     "originalMarkdown": "vendor/based-cooking/lenten-chili.md"
@@ -2763,6 +2901,7 @@
     "id": "bc-lenten-lentil-curry",
     "slug": "lenten-lentil-curry",
     "name": "Lenten Lentil Curry",
+    "collection": "Based Cooking",
     "author": "Sinan Kurtulmuş",
     "tags": [
       "spicy",
@@ -2794,6 +2933,7 @@
     "sourcePage": "https://based.cooking/lenten-lentil-curry/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lenten-lentil-curry.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "45a9b3493ebf35689a505beb8534030b4c6f8d7fa60bd3f70811e812d9189478",
     "originalMarkdown": "vendor/based-cooking/lenten-lentil-curry.md"
@@ -2802,6 +2942,7 @@
     "id": "bc-limoncello",
     "slug": "limoncello",
     "name": "Limoncello",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "alcohol",
@@ -2830,6 +2971,7 @@
     "sourcePage": "https://based.cooking/limoncello/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/limoncello.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "7c0df78da6a49f11b0a4d8a518fcb49a514169a3c0f9db49ffa1f96f13191dd2",
     "originalMarkdown": "vendor/based-cooking/limoncello.md"
@@ -2838,6 +2980,7 @@
     "id": "bc-limoncini",
     "slug": "limoncini",
     "name": "Limoncini",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "baking",
@@ -2884,6 +3027,7 @@
     "sourcePage": "https://based.cooking/limoncini/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/limoncini.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c57c2f34c059c7f71e35735aca71b11e9ebae502d02381d83eb81b07f1834253",
     "originalMarkdown": "vendor/based-cooking/limoncini.md"
@@ -2892,6 +3036,7 @@
     "id": "bc-lithuanian-cold-borscht",
     "slug": "lithuanian-cold-borscht",
     "name": "Lithuanian Cold Borscht",
+    "collection": "Based Cooking",
     "author": "Georgii Bondarev",
     "tags": [
       "soup",
@@ -2925,6 +3070,7 @@
     "sourcePage": "https://based.cooking/lithuanian-cold-borscht/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/lithuanian-cold-borscht.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a579be12f2401301448a14788cad541474fdc8004687306c42ac9f3e524a18a4",
     "originalMarkdown": "vendor/based-cooking/lithuanian-cold-borscht.md"
@@ -2933,6 +3079,7 @@
     "id": "bc-mapo-tofu",
     "slug": "mapo-tofu",
     "name": "Mapo Tofu (麻婆豆腐)",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "chinese",
@@ -2971,6 +3118,7 @@
     "sourcePage": "https://based.cooking/mapo-tofu/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/mapo-tofu.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "f03a374e1c7452e8cf26b109b29da5280c11d9cc16e3a5b79c20c2147d3d62c8",
     "originalMarkdown": "vendor/based-cooking/mapo-tofu.md"
@@ -2979,6 +3127,7 @@
     "id": "bc-mayonnaise-or-aioli",
     "slug": "mayonnaise-or-aioli",
     "name": "Mayonnaise or aioli",
+    "collection": "Based Cooking",
     "author": "brox",
     "tags": [
       "sauce",
@@ -3005,6 +3154,7 @@
     "sourcePage": "https://based.cooking/mayonnaise-or-aioli/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/mayonnaise-or-aioli.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "008b5e9531ca42a9b96acbc38585b80e5c486d7f26036e150f2a9cf668483b0d",
     "originalMarkdown": "vendor/based-cooking/mayonnaise-or-aioli.md"
@@ -3013,6 +3163,7 @@
     "id": "bc-meatloaf",
     "slug": "meatloaf",
     "name": "Meatloaf",
+    "collection": "Based Cooking",
     "author": "Ryan Wilson",
     "tags": [
       "beef",
@@ -3058,6 +3209,7 @@
     "sourcePage": "https://based.cooking/meatloaf/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/meatloaf.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6f24704a38603c041d909a60163e70114364f428860433f35aed2fefe48d69ba",
     "originalMarkdown": "vendor/based-cooking/meatloaf.md"
@@ -3066,6 +3218,7 @@
     "id": "bc-medieval-beef-soup",
     "slug": "medieval-beef-soup",
     "name": "Medieval Beef Soup",
+    "collection": "Based Cooking",
     "author": "LogSuperMulti",
     "tags": [
       "beef",
@@ -3098,6 +3251,7 @@
     "sourcePage": "https://based.cooking/medieval-beef-soup/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/medieval-beef-soup.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "de78a86fea165a914e60f193101c7492fb5d431847a622744a10018bfb4898b2",
     "originalMarkdown": "vendor/based-cooking/medieval-beef-soup.md"
@@ -3106,6 +3260,7 @@
     "id": "bc-menemen",
     "slug": "menemen",
     "name": "Menemen",
+    "collection": "Based Cooking",
     "author": "furkan",
     "tags": [
       "turkish",
@@ -3140,6 +3295,7 @@
     "sourcePage": "https://based.cooking/menemen/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/menemen.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "4998494d773c131dc53446a46b67b0b66e47900e93a414b0db10d1a59b767cab",
     "originalMarkdown": "vendor/based-cooking/menemen.md"
@@ -3148,6 +3304,7 @@
     "id": "bc-merchants-buckwheat",
     "slug": "merchants-buckwheat",
     "name": "Merchant's Buckwheat",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "russian",
@@ -3184,6 +3341,7 @@
     "sourcePage": "https://based.cooking/merchants-buckwheat/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/merchants-buckwheat.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "5ae80f7404b9f7462b560e2e03fbfccf4a755a4f17681a5a2dcd48eb6d6b0ddd",
     "originalMarkdown": "vendor/based-cooking/merchants-buckwheat.md"
@@ -3192,6 +3350,7 @@
     "id": "bc-naan-bread",
     "slug": "naan-bread",
     "name": "Naan Bread",
+    "collection": "Based Cooking",
     "author": "Nihar Samantaray",
     "tags": [
       "indian",
@@ -3222,6 +3381,7 @@
     "sourcePage": "https://based.cooking/naan-bread/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/naan-bread.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d360a7e3a774109187f27d14fd56aa1ed655824fb0ff78e3e009308fdfa42140",
     "originalMarkdown": "vendor/based-cooking/naan-bread.md"
@@ -3230,6 +3390,7 @@
     "id": "bc-no-knead-bread",
     "slug": "no-knead-bread",
     "name": "No-knead Bread",
+    "collection": "Based Cooking",
     "author": "enthdegree",
     "tags": [
       "bread",
@@ -3254,6 +3415,7 @@
     "sourcePage": "https://based.cooking/no-knead-bread/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/no-knead-bread.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "4645560bd6a78e7cad0fbf47b36607f4490213b4a2fa49bdd2ffbf825e6399f5",
     "originalMarkdown": "vendor/based-cooking/no-knead-bread.md"
@@ -3262,6 +3424,7 @@
     "id": "bc-oatmeal-pancakes",
     "slug": "oatmeal-pancakes",
     "name": "Oatmeal Pancakes",
+    "collection": "Based Cooking",
     "author": "wpnwbn",
     "tags": [
       "breakfast",
@@ -3291,6 +3454,7 @@
     "sourcePage": "https://based.cooking/oatmeal-pancakes/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/oatmeal-pancakes.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "3db6b800e92046f4c13a7a086d207e87423f987fb00b8452749d8ad62cbdc687",
     "originalMarkdown": "vendor/based-cooking/oatmeal-pancakes.md"
@@ -3299,6 +3463,7 @@
     "id": "bc-overnight-oats",
     "slug": "overnight-oats",
     "name": "Overnight Oats",
+    "collection": "Based Cooking",
     "author": "Maxwell Stelmack",
     "tags": [
       "breakfast",
@@ -3330,6 +3495,7 @@
     "sourcePage": "https://based.cooking/overnight-oats/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/overnight-oats.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c28b554ace6fdfc54013f7f001ccfe004054065ec178600b54045df0a19c89cb",
     "originalMarkdown": "vendor/based-cooking/overnight-oats.md"
@@ -3338,6 +3504,7 @@
     "id": "bc-paella",
     "slug": "paella",
     "name": "Valencian Paella",
+    "collection": "Based Cooking",
     "author": "daviduhden",
     "tags": [
       "rice",
@@ -3375,6 +3542,7 @@
     "sourcePage": "https://based.cooking/paella/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/paella.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "4301485e0b919bd1d5754fc1d3d306548d6af89a13ed2284bd48abd60877fd27",
     "originalMarkdown": "vendor/based-cooking/paella.md"
@@ -3383,6 +3551,7 @@
     "id": "bc-pan-pizza",
     "slug": "pan-pizza",
     "name": "Pan pizza",
+    "collection": "Based Cooking",
     "author": "brox",
     "tags": [
       "basic",
@@ -3414,6 +3583,7 @@
     "sourcePage": "https://based.cooking/pan-pizza/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pan-pizza.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "59618eecabb7115380ffdbb7d540a13c2fd51bc65a912cab9994c022dc39d690",
     "originalMarkdown": "vendor/based-cooking/pan-pizza.md"
@@ -3422,6 +3592,7 @@
     "id": "bc-pan-seared-chicken",
     "slug": "pan-seared-chicken",
     "name": "Pan-seared Chicken Fillet",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "chicken",
@@ -3451,6 +3622,7 @@
     "sourcePage": "https://based.cooking/pan-seared-chicken/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pan-seared-chicken.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "80403d0edb4f1694e1404dfe2185b803f215369c9d9f653bb235302233503065",
     "originalMarkdown": "vendor/based-cooking/pan-seared-chicken.md"
@@ -3459,6 +3631,7 @@
     "id": "bc-pancake",
     "slug": "pancake",
     "name": "Pancake",
+    "collection": "Based Cooking",
     "author": "BeFe",
     "tags": [
       "quick",
@@ -3487,6 +3660,7 @@
     "sourcePage": "https://based.cooking/pancake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pancake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b623143e954c1cc1f88533eea659bab3ad452657978834cc16eb72ecc21475a8",
     "originalMarkdown": "vendor/based-cooking/pancake.md"
@@ -3495,6 +3669,7 @@
     "id": "bc-parmesan-potatoes",
     "slug": "parmesan-potatoes",
     "name": "Parmesan potatoes",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "potato",
@@ -3520,6 +3695,7 @@
     "sourcePage": "https://based.cooking/parmesan-potatoes/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/parmesan-potatoes.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d049510c95aaacf8d3d969e3ef086031b7827526b69ce0f13b13fc9a586c768d",
     "originalMarkdown": "vendor/based-cooking/parmesan-potatoes.md"
@@ -3528,6 +3704,7 @@
     "id": "bc-pasta-arrabbiata",
     "slug": "pasta-arrabbiata",
     "name": "Pasta Arrabbiata",
+    "collection": "Based Cooking",
     "author": "klisurovi4",
     "tags": [
       "pasta",
@@ -3560,6 +3737,7 @@
     "sourcePage": "https://based.cooking/pasta-arrabbiata/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pasta-arrabbiata.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a673a942a493ca3b5d3db92acd1c0de4d12e12c49efd3654c553dff17c1d80fb",
     "originalMarkdown": "vendor/based-cooking/pasta-arrabbiata.md"
@@ -3568,6 +3746,7 @@
     "id": "bc-pasta-navy-style",
     "slug": "pasta-navy-style",
     "name": "Pasta Navy Style",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "russian",
@@ -3603,6 +3782,7 @@
     "sourcePage": "https://based.cooking/pasta-navy-style/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pasta-navy-style.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "12a4810c7ba804d2e410a8f158e9de761d3bad065e02adf48f2402b90df03374",
     "originalMarkdown": "vendor/based-cooking/pasta-navy-style.md"
@@ -3611,6 +3791,7 @@
     "id": "bc-pavlova",
     "slug": "pavlova",
     "name": "Pavlova",
+    "collection": "Based Cooking",
     "author": "u/Idzuna",
     "tags": [
       "meringue",
@@ -3643,6 +3824,7 @@
     "sourcePage": "https://based.cooking/pavlova/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pavlova.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "5aee52e32bcfff28bf2a0346b81544314f7fda841d3509570f71d5da8eab6efa",
     "originalMarkdown": "vendor/based-cooking/pavlova.md"
@@ -3651,6 +3833,7 @@
     "id": "bc-pho-soup",
     "slug": "pho-soup",
     "name": "Pho Soup",
+    "collection": "Based Cooking",
     "author": "Jon Burga",
     "tags": [
       "vietnamese",
@@ -3687,6 +3870,7 @@
     "sourcePage": "https://based.cooking/pho-soup/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pho-soup.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "ec48c57e7d4f34e62e0bbd64b6174bb85caa079b0db34dada1400a946f408dd2",
     "originalMarkdown": "vendor/based-cooking/pho-soup.md"
@@ -3695,6 +3879,7 @@
     "id": "bc-pickled-onions",
     "slug": "pickled-onions",
     "name": "Pickled Red Onions",
+    "collection": "Based Cooking",
     "author": "AJ",
     "tags": [
       "quick",
@@ -3718,6 +3903,7 @@
     "sourcePage": "https://based.cooking/pickled-onions/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pickled-onions.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "480ecbca9aae353939a258e83d9b1f7bcad17648e9dbf06a2e8d6169296acad3",
     "originalMarkdown": "vendor/based-cooking/pickled-onions.md"
@@ -3726,6 +3912,7 @@
     "id": "bc-pineapple-lentil-curry",
     "slug": "pineapple-lentil-curry",
     "name": "Pineapple Lentil Curry",
+    "collection": "Based Cooking",
     "author": "Hayden Walker",
     "tags": [
       "indian",
@@ -3762,6 +3949,7 @@
     "sourcePage": "https://based.cooking/pineapple-lentil-curry/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pineapple-lentil-curry.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "f1a932f811ac64b3be6745facc1bb11aa6eed252e95d97d4e565b9e85cb16414",
     "originalMarkdown": "vendor/based-cooking/pineapple-lentil-curry.md"
@@ -3770,6 +3958,7 @@
     "id": "bc-portuguese-creamy-cod",
     "slug": "portuguese-creamy-cod",
     "name": "Portuguese Creamy Cod",
+    "collection": "Based Cooking",
     "author": "Taislin",
     "tags": [
       "portuguese",
@@ -3800,6 +3989,7 @@
     "sourcePage": "https://based.cooking/portuguese-creamy-cod/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/portuguese-creamy-cod.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "558b35fa724e9c4dbc3b0ab17c624579a4617497c5d648e8d6cd143be5769514",
     "originalMarkdown": "vendor/based-cooking/portuguese-creamy-cod.md"
@@ -3808,6 +3998,7 @@
     "id": "bc-potato-leek-soup",
     "slug": "potato-leek-soup",
     "name": "Potato Leek Soup",
+    "collection": "Based Cooking",
     "author": "Cactar",
     "tags": [
       "potato",
@@ -3839,6 +4030,7 @@
     "sourcePage": "https://based.cooking/potato-leek-soup/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/potato-leek-soup.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e9740b3e71d2254a8b6bee3e1b172c64ab38b62c98f85a97f5ce3785eefb8bed",
     "originalMarkdown": "vendor/based-cooking/potato-leek-soup.md"
@@ -3847,6 +4039,7 @@
     "id": "bc-potato-pure",
     "slug": "potato-pure",
     "name": "Potato purée",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "easy",
@@ -3874,6 +4067,7 @@
     "sourcePage": "https://based.cooking/potato-pure/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/potato-puree.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b1fde8c953a338441f1bff7b9ff9f6a0be653dc98a6877b9cabe7cfa5dd7d3de",
     "originalMarkdown": "vendor/based-cooking/potato-pure.md"
@@ -3882,6 +4076,7 @@
     "id": "bc-pulpo-gallega",
     "slug": "pulpo-gallega",
     "name": "Pulpo a la gallega",
+    "collection": "Based Cooking",
     "author": "ivn1s",
     "tags": [
       "fish",
@@ -3908,6 +4103,7 @@
     "sourcePage": "https://based.cooking/pulpo-gallega/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/pulpo-gallega.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d3145a0556b6783ee5ad1179805ef0186f0ec1f73d3a4c52f299deca04c50ba1",
     "originalMarkdown": "vendor/based-cooking/pulpo-gallega.md"
@@ -3916,6 +4112,7 @@
     "id": "bc-quarkbaellchen",
     "slug": "quarkbaellchen",
     "name": "Quarkbällchen – Fried curd balls",
+    "collection": "Based Cooking",
     "author": "Kirill Schmidt",
     "tags": [
       "german",
@@ -3948,6 +4145,7 @@
     "sourcePage": "https://based.cooking/quarkbaellchen/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/quarkbaellchen.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "32641fab26b9d41d09e844418ab72f49dbeba2c140c709c4562a8b000bcb55a1",
     "originalMarkdown": "vendor/based-cooking/quarkbaellchen.md"
@@ -3956,6 +4154,7 @@
     "id": "bc-ragu-napoletano",
     "slug": "ragu-napoletano",
     "name": "Ragu Napoletano",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "sauce",
@@ -4002,6 +4201,7 @@
     "sourcePage": "https://based.cooking/ragu-napoletano/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/ragu-napoletano.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6b05f044c1455ea9ef6d70c79e5d2b488a1c23c3745c5a34008b68793accf437",
     "originalMarkdown": "vendor/based-cooking/ragu-napoletano.md"
@@ -4010,6 +4210,7 @@
     "id": "bc-ravioli",
     "slug": "ravioli",
     "name": "Ravioli",
+    "collection": "Based Cooking",
     "author": "mfed3",
     "tags": [
       "pasta",
@@ -4057,6 +4258,7 @@
     "sourcePage": "https://based.cooking/ravioli/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/ravioli.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e70a31050cfbcdd1fa1ccbc35d9baecc9d16902532cd67f2827b93ed7df77d70",
     "originalMarkdown": "vendor/based-cooking/ravioli.md"
@@ -4065,6 +4267,7 @@
     "id": "bc-refried-beans",
     "slug": "refried-beans",
     "name": "Refried Beans",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "mexican",
@@ -4095,6 +4298,7 @@
     "sourcePage": "https://based.cooking/refried-beans/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/refried-beans.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "76fec79f451dc2807b1eef62f7c7052905b39bd513dc32f767800d1a3f724ff5",
     "originalMarkdown": "vendor/based-cooking/refried-beans.md"
@@ -4103,6 +4307,7 @@
     "id": "bc-risengroed",
     "slug": "risengroed",
     "name": "Risengrød",
+    "collection": "Based Cooking",
     "author": "Vilhelm Bergsøe",
     "tags": [
       "danish",
@@ -4132,6 +4337,7 @@
     "sourcePage": "https://based.cooking/risengroed/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/risengroed.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "4a32e336b863bbf6cf4769f719e5ee15af9a07a7f9db69e6d8f7591c8ac5aed7",
     "originalMarkdown": "vendor/based-cooking/risengroed.md"
@@ -4140,6 +4346,7 @@
     "id": "bc-roesti",
     "slug": "roesti",
     "name": "Rösti",
+    "collection": "Based Cooking",
     "author": "Elias Pahls",
     "tags": [
       "swiss",
@@ -4174,6 +4381,7 @@
     "sourcePage": "https://based.cooking/roesti/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/roesti.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e4a9ec9bb90ef6a527204f3fc7eadf37070fd672ba6fc77b7e5debcd09d7c3eb",
     "originalMarkdown": "vendor/based-cooking/roesti.md"
@@ -4182,6 +4390,7 @@
     "id": "bc-sauerkraut",
     "slug": "sauerkraut",
     "name": "Sauerkraut",
+    "collection": "Based Cooking",
     "author": "Andrej Kirchmaier",
     "tags": [
       "german",
@@ -4208,6 +4417,7 @@
     "sourcePage": "https://based.cooking/sauerkraut/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/sauerkraut.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "2e2b753e537048c1f66b6f22b7e3ce6935bcaf1d06b1bfc7357df7714c611ed3",
     "originalMarkdown": "vendor/based-cooking/sauerkraut.md"
@@ -4216,6 +4426,7 @@
     "id": "bc-schnitzel",
     "slug": "schnitzel",
     "name": "Schnitzel",
+    "collection": "Based Cooking",
     "author": "Tobias & Alexandra Grimm",
     "tags": [
       "austrian",
@@ -4244,6 +4455,7 @@
     "sourcePage": "https://based.cooking/schnitzel/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/schnitzel.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "77d61c09c38131f68cd1cdc715880b0aa05f343a4fa6c672c07b2ebd4fc9c14a",
     "originalMarkdown": "vendor/based-cooking/schnitzel.md"
@@ -4252,6 +4464,7 @@
     "id": "bc-shakshouka",
     "slug": "shakshouka",
     "name": "Shakshouka",
+    "collection": "Based Cooking",
     "author": "Jakub Korsak",
     "tags": [
       "breakfast",
@@ -4284,6 +4497,7 @@
     "sourcePage": "https://based.cooking/shakshouka/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/shakshouka.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "bfc5736117a4dff3c947f16e8fb21901ca11cdb7d97200f8f9ab8a4ef0024195",
     "originalMarkdown": "vendor/based-cooking/shakshouka.md"
@@ -4292,6 +4506,7 @@
     "id": "bc-shortcrust-pastry-biscuits",
     "slug": "shortcrust-pastry-biscuits",
     "name": "Shortcrust pastry biscuits",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "baking",
@@ -4313,6 +4528,7 @@
     "sourcePage": "https://based.cooking/shortcrust-pastry-biscuits/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/shortcrust-pastry-biscuits.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "678a3bef1954faaa354dc09cc756469bbc060beb6998d0117bf815bee980c613",
     "originalMarkdown": "vendor/based-cooking/shortcrust-pastry-biscuits.md"
@@ -4321,6 +4537,7 @@
     "id": "bc-shrimp-creole",
     "slug": "shrimp-creole",
     "name": "Shrimp Creole",
+    "collection": "Based Cooking",
     "author": "Mitchell Marquez",
     "tags": [
       "shrimp",
@@ -4357,6 +4574,7 @@
     "sourcePage": "https://based.cooking/shrimp-creole/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/shrimpcreole-mitchmarq42.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "33d8756325ef1c5ce966113929e373ec11c53395857aa68c57d6f4adc929bc3c",
     "originalMarkdown": "vendor/based-cooking/shrimp-creole.md"
@@ -4365,6 +4583,7 @@
     "id": "bc-slow-cooked-lamb-with-lemon",
     "slug": "slow-cooked-lamb-with-lemon",
     "name": "Slow-cooked Lamb with Lemon",
+    "collection": "Based Cooking",
     "author": "Ben Stox",
     "tags": [
       "lamb",
@@ -4400,6 +4619,7 @@
     "sourcePage": "https://based.cooking/slow-cooked-lamb-with-lemon/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/slow-cooked-lamb-with-lemon.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "426e65244b4985b611c784e74bdb90c316251eec05be6008f228eafd2190be47",
     "originalMarkdown": "vendor/based-cooking/slow-cooked-lamb-with-lemon.md"
@@ -4408,6 +4628,7 @@
     "id": "bc-slowcooked-green-bean-beef-soup-supreme",
     "slug": "slowcooked-green-bean-beef-soup-supreme",
     "name": "Slowcooked Green Bean Beef Soup Supreme",
+    "collection": "Based Cooking",
     "author": "Bradley Gustin",
     "tags": [
       "beef",
@@ -4442,6 +4663,7 @@
     "sourcePage": "https://based.cooking/slowcooked-green-bean-beef-soup-supreme/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/slowcooked-green-bean-beef-soup-supreme.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "b6ba26f39408991382533406aaddd90746115d1a924c0db9e7e29939535a70da",
     "originalMarkdown": "vendor/based-cooking/slowcooked-green-bean-beef-soup-supreme.md"
@@ -4450,6 +4672,7 @@
     "id": "bc-smoked-turkey",
     "slug": "smoked-turkey",
     "name": "Smoked Turkey",
+    "collection": "Based Cooking",
     "author": "Daddy Warcrimes",
     "tags": [
       "basic",
@@ -4484,6 +4707,7 @@
     "sourcePage": "https://based.cooking/smoked-turkey/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/smoked-turkey.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "045d4e263d631b6f7f33abc19be9963141668b44fa228468a4d68848e66f3f6e",
     "originalMarkdown": "vendor/based-cooking/smoked-turkey.md"
@@ -4492,6 +4716,7 @@
     "id": "bc-soleier",
     "slug": "soleier",
     "name": "Soleier (pickled eggs)",
+    "collection": "Based Cooking",
     "author": "SvenT",
     "tags": [
       "snack",
@@ -4527,6 +4752,7 @@
     "sourcePage": "https://based.cooking/soleier/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/soleier.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "552e34af95729f58dc66aed1871e183319a3eaaa81171f88a1a8849bae80c93c",
     "originalMarkdown": "vendor/based-cooking/soleier.md"
@@ -4535,6 +4761,7 @@
     "id": "bc-sourdough-bread-with-seeds-and-grains",
     "slug": "sourdough-bread-with-seeds-and-grains",
     "name": "Sourdough bread with seeds and grains",
+    "collection": "Based Cooking",
     "author": "SirStark",
     "tags": [
       "sourdough",
@@ -4573,6 +4800,7 @@
     "sourcePage": "https://based.cooking/sourdough-bread-with-seeds-and-grains/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/sourdough-bread-with-seeds-and-grains.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "e3f9d1c528ee190053c78ee9c88b4871262746a0a874a04df2360fb7e737fc51",
     "originalMarkdown": "vendor/based-cooking/sourdough-bread-with-seeds-and-grains.md"
@@ -4581,6 +4809,7 @@
     "id": "bc-sourdough-loaf",
     "slug": "sourdough-loaf",
     "name": "Sourdough Table Loaf",
+    "collection": "Based Cooking",
     "author": "Quinn & Alison",
     "tags": [
       "bread",
@@ -4621,6 +4850,7 @@
     "sourcePage": "https://based.cooking/sourdough-loaf/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/sourdough-loaf.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "1129e32bcea53745cbfd84aef3ef11e22a40eab3e86d1dbd2d6389bdb979298a",
     "originalMarkdown": "vendor/based-cooking/sourdough-loaf.md"
@@ -4629,6 +4859,7 @@
     "id": "bc-sourdough-potato-bread",
     "slug": "sourdough-potato-bread",
     "name": "Potato sourdough bread",
+    "collection": "Based Cooking",
     "author": "SirStart",
     "tags": [
       "sourdough",
@@ -4659,6 +4890,7 @@
     "sourcePage": "https://based.cooking/sourdough-potato-bread/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/sourdough-potato-bread.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d241dac6b17e1e54bc77eecbdf7aeadafacf322f06804e549d3eaba52d5846d1",
     "originalMarkdown": "vendor/based-cooking/sourdough-potato-bread.md"
@@ -4667,6 +4899,7 @@
     "id": "bc-spaghetti-all-amatriciana",
     "slug": "spaghetti-all-amatriciana",
     "name": "Spaghetti all'amatriciana",
+    "collection": "Based Cooking",
     "author": "Jebusthebus",
     "tags": [
       "italian",
@@ -4697,6 +4930,7 @@
     "sourcePage": "https://based.cooking/spaghetti-all-amatriciana/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/spaghetti-all-amatriciana.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "9b0342d50b6d8a5a2d1864463f30754e2dd151bb24fc4ae54b7c7b2cb4b70681",
     "originalMarkdown": "vendor/based-cooking/spaghetti-all-amatriciana.md"
@@ -4705,6 +4939,7 @@
     "id": "bc-spanish-tortilla",
     "slug": "spanish-tortilla",
     "name": "Spanish Tortilla",
+    "collection": "Based Cooking",
     "author": "OctopusOnFire",
     "tags": [
       "spanish",
@@ -4736,6 +4971,7 @@
     "sourcePage": "https://based.cooking/spanish-tortilla/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/spanish-tortilla.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "d461eac3d3bbc04c66b96b9b0612669d7a003c72e2884750ac8762003029e9b8",
     "originalMarkdown": "vendor/based-cooking/spanish-tortilla.md"
@@ -4744,6 +4980,7 @@
     "id": "bc-spicy-sausage-pasta",
     "slug": "spicy-sausage-pasta",
     "name": "Spicy Sausage Pasta",
+    "collection": "Based Cooking",
     "author": "Thomas Cotter",
     "tags": [
       "italian",
@@ -4777,6 +5014,7 @@
     "sourcePage": "https://based.cooking/spicy-sausage-pasta/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/spicy-sausage-pasta.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "8699607952ad18bd0217b21aaf1cd7b17286886070ea65ab56c26caa4c8cacb6",
     "originalMarkdown": "vendor/based-cooking/spicy-sausage-pasta.md"
@@ -4785,6 +5023,7 @@
     "id": "bc-stracciatella-soup",
     "slug": "stracciatella-soup",
     "name": "Stracciatella soup",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "eggs",
@@ -4809,6 +5048,7 @@
     "sourcePage": "https://based.cooking/stracciatella-soup/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/stracciatella-soup.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "f4c797c4e55458ad7c729299d9ba727f3f3d691045821e1a4f2311e66eb947dc",
     "originalMarkdown": "vendor/based-cooking/stracciatella-soup.md"
@@ -4817,6 +5057,7 @@
     "id": "bc-strawberry-compote",
     "slug": "strawberry-compote",
     "name": "Strawberry Compote",
+    "collection": "Based Cooking",
     "author": "M-watermelon",
     "tags": [
       "Russian",
@@ -4844,6 +5085,7 @@
     "sourcePage": "https://based.cooking/strawberry-compote/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/glass-of-compote.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "ff60e3722d3da073b5aee0cd3663c674a9cc2fe0eeeecec34a610e2bd9abe9b3",
     "originalMarkdown": "vendor/based-cooking/strawberry-compote.md"
@@ -4852,6 +5094,7 @@
     "id": "bc-stuffed-round-squash",
     "slug": "stuffed-round-squash",
     "name": "Stuffed Round Squash",
+    "collection": "Based Cooking",
     "author": "Marco Fleres",
     "tags": [
       "supper",
@@ -4880,6 +5123,7 @@
     "sourcePage": "https://based.cooking/stuffed-round-squash/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/stuffed-round-squash.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6a8b1e951ec37baa735f7c90bcc51bba24032895b3c5dd2f207cd47cfdc468c6",
     "originalMarkdown": "vendor/based-cooking/stuffed-round-squash.md"
@@ -4888,6 +5132,7 @@
     "id": "bc-stuffed-vegetables",
     "slug": "stuffed-vegetables",
     "name": "Stuffed vegetables",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "baking",
@@ -4919,6 +5164,7 @@
     "sourcePage": "https://based.cooking/stuffed-vegetables/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/stuffed-vegetables.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "1906b0be77bc1526ebe615a4154a4d2433f72ff211f6c06214ad2086efecd747",
     "originalMarkdown": "vendor/based-cooking/stuffed-vegetables.md"
@@ -4927,6 +5173,7 @@
     "id": "bc-sunday-milkshake",
     "slug": "sunday-milkshake",
     "name": "Sunday Morning Milkshake",
+    "collection": "Based Cooking",
     "author": "Yaroslav de la Peña Smirnov",
     "tags": [
       "sweet",
@@ -4954,6 +5201,7 @@
     "sourcePage": "https://based.cooking/sunday-milkshake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/sunday-milkshake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "048163f555530ccbd2985e649d9a1cc454f115ebcdf73c966c764be8c05e0fed",
     "originalMarkdown": "vendor/based-cooking/sunday-milkshake.md"
@@ -4962,6 +5210,7 @@
     "id": "bc-swedish-pancakes",
     "slug": "swedish-pancakes",
     "name": "Swedish Pancakes",
+    "collection": "Based Cooking",
     "author": "Matt Bogenhagen",
     "tags": [
       "breakfast",
@@ -4989,6 +5238,7 @@
     "sourcePage": "https://based.cooking/swedish-pancakes/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/swedish-pancakes.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c5b209e2985c0f1c8700a33e93e91c4fb223dcb1499745b04e72bb3c6762dd27",
     "originalMarkdown": "vendor/based-cooking/swedish-pancakes.md"
@@ -4997,6 +5247,7 @@
     "id": "bc-sweet-potato-fries",
     "slug": "sweet-potato-fries",
     "name": "Basic Sweet Potato Fries Recipe",
+    "collection": "Based Cooking",
     "author": "Shane Kunz",
     "tags": [
       "potato",
@@ -5027,6 +5278,7 @@
     "sourcePage": "https://based.cooking/sweet-potato-fries/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/sweet-potato-fries.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c307ee454941ee8d2fca2df0dc220315266d47b669b8212478ccf1300bc2edc1",
     "originalMarkdown": "vendor/based-cooking/sweet-potato-fries.md"
@@ -5035,6 +5287,7 @@
     "id": "bc-tahini-short-bread",
     "slug": "tahini-short-bread",
     "name": "Tahini short bread",
+    "collection": "Based Cooking",
     "author": "Arnaud Poittevin",
     "tags": [
       "dessert",
@@ -5068,6 +5321,7 @@
     "sourcePage": "https://based.cooking/tahini-short-bread/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tahini-short-bread.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "c785cbda7c865de744be3d7fc30e68927e19fda66246dbd553d5b42a62268b7e",
     "originalMarkdown": "vendor/based-cooking/tahini-short-bread.md"
@@ -5076,6 +5330,7 @@
     "id": "bc-tajine",
     "slug": "tajine",
     "name": "Tajine Maadnous",
+    "collection": "Based Cooking",
     "author": "Sami Ben Romdhane",
     "tags": [
       "tunisian",
@@ -5107,6 +5362,7 @@
     "sourcePage": "https://based.cooking/tajine/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tajine-maadnous.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a7754970de95b62502e97e0dcde0023af37a84462af16e5d896b1534075f30a7",
     "originalMarkdown": "vendor/based-cooking/tajine.md"
@@ -5115,6 +5371,7 @@
     "id": "bc-tanzania-tea-with-milk",
     "slug": "tanzania-tea-with-milk",
     "name": "Tanzania Tea with Milk",
+    "collection": "Based Cooking",
     "author": "extramundane (Ex)",
     "tags": [
       "drink",
@@ -5137,6 +5394,7 @@
     "sourcePage": "https://based.cooking/tanzania-tea-with-milk/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tanzania-tea-with-milk.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6f548f50f1da17fe8568fc748cba9b06082e8f97e85564fce814c960dcaa2885",
     "originalMarkdown": "vendor/based-cooking/tanzania-tea-with-milk.md"
@@ -5145,6 +5403,7 @@
     "id": "bc-tarta-de-santiago",
     "slug": "tarta-de-santiago",
     "name": "Tarta de Santiago",
+    "collection": "Based Cooking",
     "author": "Laura Álvarez Iglesias",
     "tags": [
       "spanish",
@@ -5173,6 +5432,7 @@
     "sourcePage": "https://based.cooking/tarta-de-santiago/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tarta-de-santiago.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a95cdc14ab74346ae4c7eff4f9b56fd04bdc485ce671bca07d14af3a703562f2",
     "originalMarkdown": "vendor/based-cooking/tarta-de-santiago.md"
@@ -5181,6 +5441,7 @@
     "id": "bc-tarte-merengada",
     "slug": "tarte-merengada",
     "name": "Tarte Merengada de Limão",
+    "collection": "Based Cooking",
     "author": "magikarp-salesman",
     "tags": [
       "meringue",
@@ -5214,6 +5475,7 @@
     "sourcePage": "https://based.cooking/tarte-merengada/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tarte-merengada.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "3828291e80ac64996079d26f42994d87f93977a64006d6f00205b7f162d2a1d8",
     "originalMarkdown": "vendor/based-cooking/tarte-merengada.md"
@@ -5222,6 +5484,7 @@
     "id": "bc-teriyaki-beef",
     "slug": "teriyaki-beef",
     "name": "Teriyaki Beef Wok",
+    "collection": "Based Cooking",
     "author": "Lars Henrik Bolstad",
     "tags": [
       "beef",
@@ -5256,6 +5519,7 @@
     "sourcePage": "https://based.cooking/teriyaki-beef/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/teriyaki-beef.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "a949130102e49f49132cbacc7d46f7e091bf44beeae51b7d73e24f7e0fa2f491",
     "originalMarkdown": "vendor/based-cooking/teriyaki-beef.md"
@@ -5264,6 +5528,7 @@
     "id": "bc-tiramisu",
     "slug": "tiramisu",
     "name": "Tiramisù",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "dessert",
@@ -5296,6 +5561,7 @@
     "sourcePage": "https://based.cooking/tiramisu/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tiramisu.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "3fbc771b099beeb4b6d50e0b27d7f94c638dd05ecf14bbb9b3504172599cc610",
     "originalMarkdown": "vendor/based-cooking/tiramisu.md"
@@ -5304,6 +5570,7 @@
     "id": "bc-tomato-flavored-hamburger-macaroni",
     "slug": "tomato-flavored-hamburger-macaroni",
     "name": "Tomato Flavored Hamburger and Macaroni",
+    "collection": "Based Cooking",
     "author": "Ryan Wilson",
     "tags": [
       "beef",
@@ -5349,6 +5616,7 @@
     "sourcePage": "https://based.cooking/tomato-flavored-hamburger-macaroni/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tomato-flavored-hamburger-macaroni.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "db803f06398ad7bd62b4a6b201003c567eca2cd658e7056088a0ea0d24825f62",
     "originalMarkdown": "vendor/based-cooking/tomato-flavored-hamburger-macaroni.md"
@@ -5357,6 +5625,7 @@
     "id": "bc-torrijas",
     "slug": "torrijas",
     "name": "Torrijas",
+    "collection": "Based Cooking",
     "author": "danoloan",
     "tags": [
       "spanish",
@@ -5389,6 +5658,7 @@
     "sourcePage": "https://based.cooking/torrijas/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/torrijas.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "3f18a77eb4670aac5bda861a958e174c8bc6d4adb2937b435b6bd53ed1578546",
     "originalMarkdown": "vendor/based-cooking/torrijas.md"
@@ -5397,6 +5667,7 @@
     "id": "bc-tuna-salad",
     "slug": "tuna-salad",
     "name": "Simple Tuna Salad",
+    "collection": "Based Cooking",
     "author": "scary90",
     "tags": [
       "quick",
@@ -5424,6 +5695,7 @@
     "sourcePage": "https://based.cooking/tuna-salad/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tuna-salad.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "344f97573f90aad74c38401b2d97ec771545431e3412e9b3d018cf439f0e6780",
     "originalMarkdown": "vendor/based-cooking/tuna-salad.md"
@@ -5432,6 +5704,7 @@
     "id": "bc-tunisian-tajine",
     "slug": "tunisian-tajine",
     "name": "Tunisian Tajine (laidback version)",
+    "collection": "Based Cooking",
     "author": "Amine Saddem",
     "tags": [
       "tunisian",
@@ -5466,6 +5739,7 @@
     "sourcePage": "https://based.cooking/tunisian-tajine/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/tunisian-tajine.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "aa2925996a895f596e2408b4a9c30d9a3381fd1670a5b6b3e4e9c4c90c1a75e0",
     "originalMarkdown": "vendor/based-cooking/tunisian-tajine.md"
@@ -5474,6 +5748,7 @@
     "id": "bc-two-ingredient-pancakes",
     "slug": "two-ingredient-pancakes",
     "name": "Two Ingredient Pancakes",
+    "collection": "Based Cooking",
     "author": "scj",
     "tags": [
       "eggs",
@@ -5501,6 +5776,7 @@
     "sourcePage": "https://based.cooking/two-ingredient-pancakes/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/two-ingredient-pancake-02.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6889fdf46f45d63e67fc3940fb55b5b0232d233b89180789a690735bf09b5e9b",
     "originalMarkdown": "vendor/based-cooking/two-ingredient-pancakes.md"
@@ -5509,6 +5785,7 @@
     "id": "bc-ukrainian-borscht",
     "slug": "ukrainian-borscht",
     "name": "Ukrainian Borscht",
+    "collection": "Based Cooking",
     "author": "Stanislav",
     "tags": [
       "ukrainian",
@@ -5551,6 +5828,7 @@
     "sourcePage": "https://based.cooking/ukrainian-borscht/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/borscht.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "5b117387cc968f6c1f651261483691842e4b3b57940654bb773ad86afae662eb",
     "originalMarkdown": "vendor/based-cooking/ukrainian-borscht.md"
@@ -5559,6 +5837,7 @@
     "id": "bc-wholemeal-pizza",
     "slug": "wholemeal-pizza",
     "name": "Wholemeal Pizza",
+    "collection": "Based Cooking",
     "author": "Leopold Johannes Meinel",
     "tags": [
       "wholemeal",
@@ -5596,6 +5875,7 @@
     "sourcePage": "https://based.cooking/wholemeal-pizza/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/wholemeal-pizza.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "37c6821ad71f7c282121336b9d04139f7909cfc7f6cf48ce438ab7c19ea2c936",
     "originalMarkdown": "vendor/based-cooking/wholemeal-pizza.md"
@@ -5604,6 +5884,7 @@
     "id": "bc-wholemeal-wheat-flour-pizza-dough",
     "slug": "wholemeal-wheat-flour-pizza-dough",
     "name": "Wholemeal Wheat Flour Pizza Dough",
+    "collection": "Based Cooking",
     "author": "Leopold Johannes Meinel",
     "tags": [
       "wholemeal",
@@ -5628,6 +5909,7 @@
     "sourcePage": "https://based.cooking/wholemeal-wheat-flour-pizza-dough/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/wholemeal-wheat-flour-pizza-dough.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "6f41589b27f6664c17ff2f7d233e4aa8ec1a4a6673152fc023be8295efc24e17",
     "originalMarkdown": "vendor/based-cooking/wholemeal-wheat-flour-pizza-dough.md"
@@ -5636,6 +5918,7 @@
     "id": "bc-yogurt-cake",
     "slug": "yogurt-cake",
     "name": "Yogurt cake",
+    "collection": "Based Cooking",
     "author": "pestanzul",
     "tags": [
       "cheesefare",
@@ -5670,6 +5953,7 @@
     "sourcePage": "https://based.cooking/yogurt-cake/",
     "photoSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/static/pix/yogurt-cake.webp",
     "license": "Public domain (Unlicense)",
+    "licenseSource": "https://github.com/LukeSmithxyz/based.cooking/blob/e34b4123fe82d5e5e026d1cdcffa7097113b1956/README.md#license",
     "revision": "e34b4123fe82d5e5e026d1cdcffa7097113b1956",
     "imageSha256": "7ea8f2716e6b40bf3babd940f63d3b437949fe19225ca73d7fe290fb4db3c36f",
     "originalMarkdown": "vendor/based-cooking/yogurt-cake.md"

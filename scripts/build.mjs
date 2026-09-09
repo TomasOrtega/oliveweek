@@ -9,16 +9,17 @@ import {createContext} from '../src/core.js';
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const source=JSON.parse(await readFile(resolve(root,'data/community.json'),'utf8'));
+const publicDomainSource=JSON.parse(await readFile(resolve(root,'data/public-domain-recipes.json'),'utf8'));
 const spreadsheetPhotos=JSON.parse(await readFile(resolve(root,'data/spreadsheet-photo-sources.json'),'utf8'));
 // Explicit third-party attributions require separate permission, despite the
 // collection's blanket public-domain policy. Keep these out of every build.
-const excluded=new Set(['couscous','yorkshire-puddings','tuscan-style-pork-roast']);
-const community=source.filter(r=>!excluded.has(r.slug));
+const excluded=new Set(['beef-tips','couscous','gumbo-shrimp-and-sausage','shrimp-and-grits','tuscan-style-pork-roast','yorkshire-puddings']);
+const community=[...source,...publicDomainSource].filter(r=>!excluded.has(r.slug));
 const byId=new Map(community.map(r=>[r.id,r]));
 const communityRecipes=planningRecipes.map(r=>{
   const s=byId.get(r.sourceId);
   if(!s)throw new Error(`Recipe ${r.id} has no approved photographed source: ${r.sourceId}`);
-  return {...r,photo:s.photo,source:s.source,photoSource:s.photoSource,sourceName:s.name,author:s.author,license:s.license,revision:s.revision};
+  return {...r,photo:s.photo,source:s.source,photoSource:s.photoSource,sourceName:s.name,collection:s.collection,author:s.author,license:s.license,licenseSource:s.licenseSource,revision:s.revision};
 });
 const spreadsheetPhotoById=new Map(spreadsheetPhotos.map(({id,...photo})=>[id,photo]));
 const importedRecipes=spreadsheetRecipes.map(r=>{
@@ -30,6 +31,7 @@ const recipes=[...communityRecipes,...importedRecipes];
 const catalogue={version:2,nutritionStatus:'generic-starter-estimates-not-verified',foods,recipes};
 createContext(catalogue);
 for(const r of community){
+  if(!r.photo)continue;
   if(!/^assets\/recipes\/[a-zA-Z0-9_-]+\.(webp|jpe?g|png)$/.test(r.photo))throw new Error('Invalid image path');
   const bytes=await readFile(resolve(root,r.photo));
   if(createHash('sha256').update(bytes).digest('hex')!==r.imageSha256)throw new Error(`Photograph checksum mismatch: ${r.id}`);
@@ -49,13 +51,14 @@ for(const path of ['index.html','styles.css','src','assets/mark.svg','manifest.w
 await mkdir(resolve(dist,'data'),{recursive:true});
 await writeFile(resolve(dist,'data/catalogue.json'),JSON.stringify(catalogue));
 await writeFile(resolve(dist,'data/community.json'),JSON.stringify(community));
-for(const photo of new Set([...community,...importedRecipes].map(r=>r.photo))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
+for(const photo of new Set([...community,...importedRecipes].map(r=>r.photo).filter(Boolean))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
 await cp(resolve(root,'vendor/based-cooking/LICENSE.txt'),resolve(dist,'RECIPE-LICENSE.txt'));
+await cp(resolve(root,'vendor/public-domain-recipes/LICENSE.txt'),resolve(dist,'PUBLIC-DOMAIN-RECIPES-LICENSE.txt'));
 await writeFile(resolve(dist,'.nojekyll'),'');
 const hash=createHash('sha256');
 for(const path of ['index.html','styles.css','src/app.js','src/core.js','src/storage.js','data/catalogue.json','data/community.json'])hash.update(await readFile(resolve(dist,path)));
 const version=hash.digest('hex').slice(0,12);
 const worker=await readFile(resolve(root,'sw.js'),'utf8');
 await writeFile(resolve(dist,'sw.js'),worker.replaceAll('__BUILD_VERSION__',version));
-await writeFile(resolve(dist,'build-info.json'),JSON.stringify({version,recipes:recipes.length,sourceRecipes:community.length,foods:foods.length,sourceRevision:community[0]?.revision},null,2));
-console.log(`Built ${recipes.length} mapped recipes, ${community.length} source recipes/photos, ${foods.length} ingredient records. Build ${version}.`);
+await writeFile(resolve(dist,'build-info.json'),JSON.stringify({version,recipes:recipes.length,sourceRecipes:community.length,sourcePhotos:community.filter(r=>r.photo).length,foods:foods.length,sourceRevisions:Object.fromEntries(community.map(r=>[r.collection,r.revision]))},null,2));
+console.log(`Built ${recipes.length} mapped recipes, ${community.length} source recipes, ${community.filter(r=>r.photo).length} source photos, ${foods.length} ingredient records. Build ${version}.`);

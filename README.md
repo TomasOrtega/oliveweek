@@ -29,7 +29,9 @@ All data stays in the browser. There is no cloud synchronization.
 
 ## Recipes and nutrition
 
-The source recipe collection and its photographs come from [LukeSmithxyz/based.cooking](https://github.com/LukeSmithxyz/based.cooking) at revision `e34b4123fe82d5e5e026d1cdcffa7097113b1956`. The planning catalogue also includes the 20 recipes from the author. Those recipes use attributed, locally bundled Wikimedia Commons photographs. Provenance, exclusions, licenses and checksums are recorded in [`vendor/based-cooking/PROVENANCE.json`](vendor/based-cooking/PROVENANCE.json), [`data/spreadsheet-photo-sources.json`](data/spreadsheet-photo-sources.json) and [`NOTICE.md`](NOTICE.md).
+The 414-recipe source collection comes from [LukeSmithxyz/based.cooking](https://github.com/LukeSmithxyz/based.cooking) at revision `e34b4123fe82d5e5e026d1cdcffa7097113b1956` and its continuation, [ronaldl29/public-domain-recipes](https://github.com/ronaldl29/public-domain-recipes), at revision `da84378b36bd5b2e3cb35f610d64630bf1bd899d`. Duplicate recipes and entries that explicitly credit outside publications or videos are excluded. Contributor-supplied photographs are bundled when available; text-only recipes display without an invented image.
+
+The planning catalogue also includes the 20 recipes from the author. Those recipes use attributed, locally bundled Wikimedia Commons photographs. Provenance, exclusions, licenses and checksums are recorded in [`vendor/based-cooking/PROVENANCE.json`](vendor/based-cooking/PROVENANCE.json), [`vendor/public-domain-recipes/PROVENANCE.json`](vendor/public-domain-recipes/PROVENANCE.json), [`data/spreadsheet-photo-sources.json`](data/spreadsheet-photo-sources.json) and [`NOTICE.md`](NOTICE.md).
 
 Planning recipes are weighed adaptations, so a photograph may show the source version rather than the exact adapted serving. Source-only recipes without mapped quantities are excluded from automatic planning and do not receive estimated macros.
 
@@ -58,4 +60,4 @@ CI runs these checks using `uv.lock`. Dependabot checks Python packages and GitH
 
 ## License
 
-OliveWeek code is MIT licensed. Vendored recipes and photographs retain their source terms and provenance. See [`LICENSE`](LICENSE), [`NOTICE.md`](NOTICE.md), [`data/spreadsheet-photo-sources.json`](data/spreadsheet-photo-sources.json) and [`vendor/based-cooking/LICENSE.txt`](vendor/based-cooking/LICENSE.txt).
+OliveWeek code is MIT licensed. Vendored recipes and photographs retain their source terms and provenance. See [`LICENSE`](LICENSE), [`NOTICE.md`](NOTICE.md), [`data/spreadsheet-photo-sources.json`](data/spreadsheet-photo-sources.json), [`vendor/based-cooking/LICENSE.txt`](vendor/based-cooking/LICENSE.txt) and [`vendor/public-domain-recipes/LICENSE.txt`](vendor/public-domain-recipes/LICENSE.txt).

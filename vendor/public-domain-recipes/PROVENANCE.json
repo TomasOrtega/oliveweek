@@ -1,0 +1,27 @@
+{
+  "repository": "ronaldl29/public-domain-recipes",
+  "revision": "da84378b36bd5b2e3cb35f610d64630bf1bd899d",
+  "archiveSha256": "c2876baf54ae3185239da4f9ef48261d96a34a13d5d32f07936cb2bf04ca61d3",
+  "licenseStatement": "This website and all its content is in the public domain.",
+  "licenseStatementSource": "https://github.com/ronaldl29/public-domain-recipes/blob/da84378b36bd5b2e3cb35f610d64630bf1bd899d/README.md#license",
+  "excluded": {
+    "beef-tips": "Modification of a recipe credited to Texas Cafe Classics.",
+    "couscous": "Explicitly copied from 196flavors. Separate permission not verified.",
+    "gumbo-shrimp-and-sausage": "Simplified from a recipe credited to AB's Seafood Gumbo.",
+    "shrimp-and-grits": "Derived from a recipe credited to Smokin' & Grillin' wit AB.",
+    "tuscan-style-pork-roast": "Adaptation attributed to Binging With Babish.",
+    "yorkshire-puddings": "Originally published on BBC Good Food."
+  },
+  "duplicatesSkipped": 130,
+  "formatSkipped": {
+    "cheese": "Missing numbered directions.",
+    "cream-cheese": "Missing numbered directions.",
+    "greek-yogurt": "Missing numbered directions.",
+    "modern-borscht": "Missing numbered directions.",
+    "peat-carrot-salad": "Missing numbered directions.",
+    "ricotta": "Missing numbered directions.",
+    "simple-sauce": "Missing ingredients.",
+    "yogurt": "Missing numbered directions."
+  },
+  "count": 272
+}

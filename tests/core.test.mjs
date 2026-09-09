@@ -11,24 +11,28 @@ const plan=()=>C.generatePlan(p,ctx,{seed:42});
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 
 test('catalogue has attributed photos and honest nutrition status',()=>{
-  assert.equal(catalogue.recipes.length,46);assert.equal(community.length,142);
+  assert.equal(catalogue.recipes.length,46);assert.ok(community.length>=300);
   assert.equal(catalogue.nutritionStatus,'generic-starter-estimates-not-verified');
   for(const f of catalogue.foods)assert.equal(f.source.type,'starter-estimate');
   for(const r of catalogue.recipes){
     assert.ok(r.photo);assert.ok(r.author);
     if(r.sourceCollection){assert.equal(r.sourceCollection,'RECIPES RECEPTES.xlsx');assert.match(r.sourceWorkbookSha256,/^[a-f0-9]{64}$/);assert.ok(r.photoSource.startsWith('https://commons.wikimedia.org/'));assert.ok(r.photoAuthor);assert.ok(r.photoLicense);}
-    else{assert.ok(r.source.includes(r.revision));assert.ok(community.some(s=>s.id===r.sourceId));}
+    else{assert.equal(r.collection,'Based Cooking');assert.ok(r.source.includes(r.revision));assert.ok(r.licenseSource.includes(r.revision));assert.ok(community.some(s=>s.id===r.sourceId));}
   }
   assert.equal(catalogue.recipes.filter(r=>r.sourceCollection).length,20);
 });
 test('every bundled image is local and exactly matches its recorded checksum',async()=>{
-  for(const r of [...community,...catalogue.recipes.filter(r=>r.sourceCollection)]){assert.match(r.photo,/^assets\/recipes\/[\w-]+\.(webp|jpg|jpeg|png)$/);const bytes=await readFile(new URL('../dist/'+r.photo,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),r.imageSha256);}
+  for(const r of [...community.filter(r=>r.photo),...catalogue.recipes.filter(r=>r.sourceCollection)]){assert.match(r.photo,/^assets\/recipes\/[\w-]+\.(webp|jpg|jpeg|png)$/);const bytes=await readFile(new URL('../dist/'+r.photo,import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),r.imageSha256);}
 });
 test('all recipes in the spreadsheet index are present',()=>{
   const expected=['baba-ganoush','beet-hummus','falafel','gazpacho','gorditas','japanese-curry','mung-bean-pancake','pineapple-tofu','samosa-masoor-dal','spinach-pesto','tabbouleh','vegan-bolognese','vegan-carbonara','vegan-enchiladas','vegetable-couscous','vegetable-fajitas','vegetable-paella','vegetable-pizza','vegetarian-ramen','zucchini-soup'];
   assert.deepEqual(catalogue.recipes.filter(r=>r.sourceCollection).map(r=>r.photoId).sort(),expected);
 });
-test('externally credited recipes are not published',()=>{for(const slug of ['couscous','yorkshire-puddings','tuscan-style-pork-roast'])assert.ok(!community.some(r=>r.slug===slug));});
+test('source recipes retain collection provenance',()=>{
+  assert.deepEqual(new Set(community.map(r=>r.collection)),new Set(['Based Cooking','Public Domain Recipes']));
+  for(const r of community){assert.ok(r.source.includes(r.revision));assert.ok(r.licenseSource.includes(r.revision));assert.ok(r.originalMarkdown);}
+});
+test('externally credited recipes are not published',()=>{for(const slug of ['beef-tips','couscous','gumbo-shrimp-and-sausage','shrimp-and-grits','tuscan-style-pork-roast','yorkshire-puddings'])assert.ok(!community.some(r=>r.slug===slug));});
 test('recipe IDs and source IDs are unique',()=>{assert.equal(new Set(catalogue.recipes.map(r=>r.id)).size,catalogue.recipes.length);assert.equal(new Set(community.map(r=>r.id)).size,community.length);});
 test('ingredient arithmetic matches an independent direct sum',()=>{for(const r of catalogue.recipes)for(const key of C.NUTRIENTS){let total=0;for(const i of r.ingredients)total+=ctx.foods.get(i.foodId).per100g[key]*i.grams/100;near(C.recipeNutrition(r.id,1,ctx)[key],total);near(C.recipeNutrition(r.id,3.75,ctx)[key],total*3.75);}});
 test('water has no nutrition and is excluded from shopping',()=>{assert.ok(C.NUTRIENTS.every(k=>ctx.foods.get('water').per100g[k]===0));assert.ok(!C.groceryList(plan(),ctx).some(i=>i.id==='water'));});

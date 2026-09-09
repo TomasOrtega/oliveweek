@@ -16,15 +16,30 @@ OliveWeek preserves the original submitted Markdown and the source photograph fo
 
 Photographs are copied without visual alteration. The UI crops them with CSS for thumbnails. Each photo's full content remains in its original locally served image file. Recipe adaptations can differ from the pictured source version, especially added side dishes or changed ingredients. The application describes this explicitly.
 
+## Public Domain Recipes collection
+
+Source repository: https://github.com/ronaldl29/public-domain-recipes
+
+Pinned revision: `da84378b36bd5b2e3cb35f610d64630bf1bd899d`.
+
+Content license statement: https://github.com/ronaldl29/public-domain-recipes/blob/da84378b36bd5b2e3cb35f610d64630bf1bd899d/README.md#license
+
+Public Domain Recipes is a continuation of Based Cooking. Its README dedicates submitted text and images to the public domain, and its software license is the Unlicense. A copy is retained in `vendor/public-domain-recipes/LICENSE.txt`.
+
+OliveWeek imports only recipes not already present in the pinned Based Cooking collection. Original Markdown is stored in `vendor/public-domain-recipes`; `data/public-domain-recipes.json` retains collection, author, source, license and revision metadata. The one new contributor photograph is stored locally with its source URL and SHA-256 checksum. The pinned archive hash, duplicate count, format skips and exclusions are recorded in `vendor/public-domain-recipes/PROVENANCE.json`.
+
 ## Excluded entries
 
-The following entries explicitly credit third-party publications or an adaptation and were removed from the active source collection and published website pending separate permission review:
+The following entries explicitly credit third-party publications, channels or adaptations and were removed from the active source collection and published website pending separate permission review:
 
+- `beef-tips`: modification of a Texas Cafe Classics recipe.
 - `couscous`: text credited to 196flavors.
+- `gumbo-shrimp-and-sausage`: simplified from AB's Seafood Gumbo.
+- `shrimp-and-grits`: derived from Smokin' & Grillin' wit AB.
 - `yorkshire-puddings`: originally published by BBC Good Food.
 - `tuscan-style-pork-roast`: adaptation attributed to Binging With Babish.
 
-The blanket upstream license was not treated as independent permission to republish obviously attributed third-party content. Other contributor ownership has not been independently verified. Rights concerns should be reported with the affected file and supporting details. Maintainers should remove affected content while reviewing the concern.
+The blanket upstream licenses were not treated as independent permission to republish obviously attributed third-party content. Other contributor ownership has not been independently verified. Rights concerns should be reported with the affected file and supporting details. Maintainers should remove affected content while reviewing the concern.
 
 ## OliveWeek-authored adaptations and code
 
