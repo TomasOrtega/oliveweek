@@ -62,7 +62,7 @@ const overnightOats = fruits.flatMap(fruit=>toppings.map(topping=>recipe(
     `Stir it with the oats, soy milk, ${topping.name} and cinnamon in a covered container.`,
     'Refrigerate overnight, stir again, and eat cold. Prepare no more than 3 refrigerated portions at a time.',
   ],
-  {prep:'fresh',freezer:false},
+  {photoId:'overnight-oats',prep:'fresh',freezer:false},
 )));
 
 const yogurtBowls = fruits.flatMap(fruit=>toppings.map(topping=>recipe(
@@ -76,7 +76,7 @@ const yogurtBowls = fruits.flatMap(fruit=>toppings.map(topping=>recipe(
     'Spoon the yogurt into a bowl and top with the oats and fruit.',
     `Finish with the ${topping.name} and honey. Assemble just before eating.`,
   ],
-  {prep:'fresh',freezer:false},
+  {photoId:'yogurt-bowl',prep:'fresh',freezer:false},
 )));
 
 const smoothieBoosters = [
@@ -98,7 +98,7 @@ const breakfastSmoothies = fruits.flatMap(fruit=>smoothieBoosters.map(booster=>r
     `Blend the fruit, yogurt, milk and ${booster.name} until smooth, adding a little water if needed.`,
     'Drink promptly or keep refrigerated until serving. Stir if the smoothie separates.',
   ],
-  {prep:'fresh',freezer:false},
+  {photoId:'breakfast-smoothie',prep:'fresh',freezer:false},
 )));
 
 const savoryFillings = [
@@ -147,7 +147,7 @@ const savoryBreakfasts = savoryFormats.flatMap(format=>savoryFillings.map(fillin
   format.minutes,
   [...format.amounts,...filling.amounts],
   format.steps(filling),
-  format.options,
+  {photoId:format.slug,...format.options},
 )));
 
 const biteFlavors = [
@@ -169,6 +169,7 @@ const energyBites = biteFlavors.flatMap(flavor=>toppings.map(topping=>recipe(
     `Mix with the oats, ${topping.name} and cinnamon until the mixture holds together.`,
     'Shape into small bites and refrigerate until firm. Keep chilled until serving.',
   ],
+  {photoId:'energy-bites'},
 )));
 
 const hummusFlavors = [
@@ -198,7 +199,7 @@ const hummusSnacks = hummusFlavors.flatMap(flavor=>dippers.map(dipper=>recipe(
     'Blend the prepared flavoring with rinsed chickpeas, tahini, lemon, garlic and oil. Add water a spoonful at a time until smooth.',
     `Prepare the ${dipper.name}; toast wedges until crisp if desired. Keep the dip and dippers separate until eating.`,
   ],
-  {storage:dipStorage,servingNote:'Amounts are for one base portion. Canned chickpeas are drained, and nutrition includes all listed oil. Dippers are included; freeze the hummus only.'},
+  {photoId:'hummus',storage:dipStorage,servingNote:'Amounts are for one base portion. Canned chickpeas are drained, and nutrition includes all listed oil. Dippers are included; freeze the hummus only.'},
 )));
 
 const roastBases = [
@@ -228,7 +229,7 @@ const roastedSnacks = roastBases.flatMap(base=>roastFlavors.map(flavor=>recipe(
     `${base.prep} ${flavor.finish}`,
     'Spread in one layer and roast until browned and tender, stirring halfway through. Start checking after 18 minutes.',
   ],
-  {freezer:false,mediterranean:flavor.mediterranean??true},
+  {photoId:'roasted-snack',freezer:false,mediterranean:flavor.mediterranean??true},
 )));
 
 const spreads = [
@@ -249,7 +250,7 @@ const spreadSnacks = spreads.flatMap(spread=>dippers.map(dipper=>recipe(
     ...spread.steps,
     `Prepare the ${dipper.name}; toast wedges until crisp if desired. Keep the spread and dippers separate until eating.`,
   ],
-  {...spread.options,storage:spread.options.freezer===false?freshDipStorage:dipStorage,servingNote:'Amounts are for one base portion. Beans are drained unless identified as dry, and dippers are included; freeze only a spread marked as freezer-suitable.'},
+  {photoId:'bean-spread',...spread.options,storage:spread.options.freezer===false?freshDipStorage:dipStorage,servingNote:'Amounts are for one base portion. Beans are drained unless identified as dry, and dippers are included; freeze only a spread marked as freezer-suitable.'},
 )));
 
 export const openPlanningRecipes = [

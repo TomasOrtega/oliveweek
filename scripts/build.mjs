@@ -13,6 +13,7 @@ const source=JSON.parse(await readFile(resolve(root,'data/community.json'),'utf8
 const publicDomainSource=JSON.parse(await readFile(resolve(root,'data/public-domain-recipes.json'),'utf8'));
 const historicalSource=JSON.parse(await readFile(resolve(root,'data/open-recipe-archive.json'),'utf8'));
 const spreadsheetPhotos=JSON.parse(await readFile(resolve(root,'data/spreadsheet-photo-sources.json'),'utf8'));
+const openPlanningPhotos=JSON.parse(await readFile(resolve(root,'data/open-planning-photo-sources.json'),'utf8'));
 // Explicit third-party attributions require separate permission, despite the
 // collection's blanket public-domain policy. Keep these out of every build.
 const excluded=new Set(['beef-tips','couscous','gumbo-shrimp-and-sausage','shrimp-and-grits','tuscan-style-pork-roast','yorkshire-puddings']);
@@ -29,7 +30,13 @@ const importedRecipes=spreadsheetRecipes.map(r=>{
   if(!photo)throw new Error(`Recipe ${r.id} has no attributed spreadsheet photo: ${r.photoId}`);
   return {...r,...photo,sourceName:r.name};
 });
-const recipes=[...communityRecipes,...importedRecipes,...openPlanningRecipes];
+const openPlanningPhotoById=new Map(openPlanningPhotos.map(({id,...photo})=>[id,photo]));
+const openRecipes=openPlanningRecipes.map(r=>{
+  const photo=openPlanningPhotoById.get(r.photoId);
+  if(!photo)throw new Error(`Recipe ${r.id} has no attributed open-pack photo: ${r.photoId}`);
+  return {...r,...photo,sourceName:r.name};
+});
+const recipes=[...communityRecipes,...importedRecipes,...openRecipes];
 const catalogue={version:2,nutritionStatus:'generic-starter-estimates-not-verified',foods,recipes};
 createContext(catalogue);
 for(const r of community){
@@ -43,6 +50,11 @@ for(const r of importedRecipes){
   const bytes=await readFile(resolve(root,r.photo));
   if(createHash('sha256').update(bytes).digest('hex')!==r.imageSha256)throw new Error(`Spreadsheet photograph checksum mismatch: ${r.id}`);
 }
+for(const r of openPlanningPhotos){
+  if(!/^assets\/recipes\/[a-zA-Z0-9_-]+\.(webp|jpe?g|png)$/.test(r.photo))throw new Error('Invalid open-pack image path');
+  const bytes=await readFile(resolve(root,r.photo));
+  if(createHash('sha256').update(bytes).digest('hex')!==r.imageSha256)throw new Error(`Open-pack photograph checksum mismatch: ${r.id}`);
+}
 const dist=resolve(root,'dist');
 await rm(dist,{recursive:true,force:true});
 await mkdir(dist,{recursive:true});
@@ -53,7 +65,7 @@ for(const path of ['index.html','styles.css','src','assets/mark.svg','manifest.w
 await mkdir(resolve(dist,'data'),{recursive:true});
 await writeFile(resolve(dist,'data/catalogue.json'),JSON.stringify(catalogue));
 await writeFile(resolve(dist,'data/community.json'),JSON.stringify(community));
-for(const photo of new Set([...community,...importedRecipes].map(r=>r.photo).filter(Boolean))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
+for(const photo of new Set([...community,...importedRecipes,...openRecipes].map(r=>r.photo).filter(Boolean))){await mkdir(dirname(resolve(dist,photo)),{recursive:true});await cp(resolve(root,photo),resolve(dist,photo));}
 await cp(resolve(root,'vendor/based-cooking/LICENSE.txt'),resolve(dist,'RECIPE-LICENSE.txt'));
 await cp(resolve(root,'vendor/public-domain-recipes/LICENSE.txt'),resolve(dist,'PUBLIC-DOMAIN-RECIPES-LICENSE.txt'));
 await cp(resolve(root,'vendor/open-recipe-archive/LICENSE.txt'),resolve(dist,'OPEN-RECIPE-ARCHIVE-LICENSE.txt'));
