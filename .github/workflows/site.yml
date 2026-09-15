@@ -87,4 +87,4 @@ jobs:
         uses: actions/configure-pages@v6
       - name: Publish static website
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
