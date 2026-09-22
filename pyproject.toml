@@ -7,7 +7,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "playwright==1.62.0",
-    "prek>=0.4.14",
+    "prek>=0.5.3",
     "ruff>=0.16.9",
 ]
 
