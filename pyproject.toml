@@ -6,9 +6,9 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "playwright==1.63.0",
+    "playwright==1.64.0",
     "prek>=0.5.5",
-    "ruff>=0.16.9",
+    "ruff>=0.17.1",
 ]
 
 [tool.uv]
